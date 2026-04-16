@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diagnostic gratuit — Adam Boards</title>
+  <meta name="description" content="Envoyez votre FEC, recevez un diagnostic financier complet en 48h. Gratuit, confidentiel, sans engagement. Notre expert financier identifie vos leviers de croissance.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo"><img src="images/logo.png" alt="Adam Boards — Analyser, Décider, Agir, Mesurer"></a>
+      <nav class="nav">
+        <a href="notre-methode.html">Notre méthode</a>
+        <a href="accompagnement.html">Accompagnement</a>
+        <a href="resultats.html">Résultats</a>
+        <a href="experts-comptables.html">Experts-comptables</a>
+        <a href="qui-sommes-nous.html">Qui sommes-nous</a>
+        <a href="diagnostic-gratuit.html" class="nav-cta active">Diagnostic gratuit</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Ouvrir le menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero">
+    <div class="container">
+      <div style="max-width: 720px; margin: 0 auto; text-align: center;">
+        <h1>On analyse vos données réelles. 48h plus tard, vous découvrez ce que vos chiffres cachent.</h1>
+        <p style="max-width: 620px; margin: 20px auto 32px;">Notre expert financier étudie votre FEC et identifie vos leviers de croissance. Gratuit, confidentiel, sans engagement.</p>
+        <a href="#diagnostic-form" class="btn btn-gold btn-lg">Demander mon diagnostic gratuit</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CE QUE VOTRE DIAGNOSTIC VA REVELER ========== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge badge-blue">Ce que votre diagnostic va révéler</span>
+        <h2>3 éclairages concrets sur votre entreprise</h2>
+      </div>
+      <div class="grid grid-3">
+        <div class="card">
+          <div class="card-icon card-icon-blue">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M3 3v18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M7 16l4-6 4 4 5-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Vos vrais KPIs</h3>
+          <p>Marge nette, rentabilité par client, évolution mensuelle. Les indicateurs que votre comptabilité ne vous montre pas directement.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon card-icon-gold">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 8v4l3 3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="4" y1="4" x2="20" y2="20" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+          <h3>Vos angles morts</h3>
+          <p>Impayés oubliés, clients non rentables, charges anormales. Tout ce qui grignote votre trésorerie sans que vous le sachiez.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon card-icon-green">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Vos leviers d'action</h3>
+          <p>Ce que votre consultant marketing peut exécuter pour vous immédiatement : relances, campagnes ciblées, actions de récupération de chiffre d'affaires.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIAL + FORM ========== -->
+  <section class="section section-light" id="diagnostic-form-section">
+    <div class="container">
+
+      <!-- Micro-testimonial -->
+      <div style="max-width: 600px; margin: 0 auto 48px;">
+        <div class="testimonial">
+          <p>Avant : 3 fichiers Excel et un appel comptable. Après : 4 200 EUR de créances récupérées en 30 jours.</p>
+          <div class="testimonial-author">Dirigeant TPE, secteur BTP</div>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div style="max-width: 520px; margin: 0 auto;">
+        <div style="text-align: center; margin-bottom: 32px;">
+          <h2>Demandez votre diagnostic gratuit</h2>
+          <p class="text-muted" style="margin-top: 8px;">Remplissez le formulaire, votre expert financier vous contacte sous 24h.</p>
+        </div>
+
+        <form id="diagnostic-form" style="background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius); padding: 32px; box-shadow: var(--shadow-md);">
+          <div class="form-group">
+            <label class="form-label" for="nom">Nom complet</label>
+            <input type="text" id="nom" name="nom" class="form-input" placeholder="Prénom Nom" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="email">Email professionnel</label>
+            <input type="email" id="email" name="email" class="form-input" placeholder="vous@entreprise.fr" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="telephone">Téléphone</label>
+            <input type="tel" id="telephone" name="telephone" class="form-input" placeholder="06 00 00 00 00" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="nb-entreprises">Nombre d'entreprises</label>
+            <select id="nb-entreprises" name="nb-entreprises" class="form-input" required>
+              <option value="" disabled selected>Sélectionnez</option>
+              <option value="1">1</option>
+              <option value="2-3">2-3</option>
+              <option value="4+">4+</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">Demander mon diagnostic gratuit</button>
+        </form>
+
+        <p style="text-align: center; font-size: 0.8rem; color: var(--gray-400); margin-top: 16px;">Données hébergées en France | Confidentialité garantie | RGPD</p>
+
+        <div style="margin-top: 24px; background: var(--blue-pale); border-radius: var(--radius-sm); padding: 16px 20px; font-size: 0.9rem; color: var(--gray-700); text-align: center;">
+          <strong>Prochaine étape :</strong> Votre expert financier vous contacte sous 24h pour récupérer votre FEC et planifier votre restitution.
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== FAQ ========== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Questions fréquentes</h2>
+      </div>
+      <div style="max-width: 640px; margin: 0 auto;">
+        <div class="faq-item">
+          <div class="faq-question">C'est quoi un FEC ?</div>
+          <div class="faq-answer">Le Fichier des Écritures Comptables (FEC) est un export standardisé de votre comptabilité, obligatoire en France depuis 2014. Votre expert-comptable peut vous le fournir en quelques minutes. Il contient l'ensemble de vos écritures comptables dans un format exploitable.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">Mes données sont-elles en sécurité ?</div>
+          <div class="faq-answer">Vos données sont hébergées en France et traitées dans le strict respect du RGPD. Seul votre expert financier dédié accède à votre FEC pour réaliser l'analyse. Aucune donnée n'est partagée avec des tiers. Vous pouvez demander la suppression de vos fichiers à tout moment.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">Combien de temps dure le diagnostic ?</div>
+          <div class="faq-answer">Votre expert financier analyse votre FEC sous 48h. Vous recevez ensuite une restitution détaillée lors d'un appel de 30 minutes où il vous présente vos KPIs, vos angles morts et vos leviers d'action concrets. L'ensemble du processus prend moins d'une semaine.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo"><img src="images/logo.png" alt="Adam Boards"></a>
+          <p>Accompagnement financier et marketing pour les dirigeants de TPE en France. Vos chiffres, vos actions, vos résultats — en temps réel.</p>
+        </div>
+        <div>
+          <h4>Méthode</h4>
+          <ul>
+            <li><a href="notre-methode.html">Notre méthode</a></li>
+            <li><a href="accompagnement.html">Accompagnement</a></li>
+            <li><a href="resultats.html">Résultats clients</a></li>
+            <li><a href="experts-comptables.html">Experts-comptables</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ressources</h4>
+          <ul>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="securite.html">Sécurité des données</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Légal</h4>
+          <ul>
+            <li><a href="mentions-legales.html">Mentions légales</a></li>
+            <li><a href="confidentialite.html">Politique de confidentialité</a></li>
+            <li><a href="cgv.html">CGV</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>Adam Boards — Tous droits réservés</span>
+        <div class="flex gap-16">
+          <a href="mentions-legales.html">Mentions légales</a>
+          <a href="confidentialite.html">Confidentialité</a>
+          <a href="cgv.html">CGV</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
