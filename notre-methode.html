@@ -3,603 +3,248 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Notre méthode en 3 étapes — Adam Boards</title>
-  <meta name="description" content="Deux experts, un tableau de bord. Votre expert financier diagnostique vos chiffres, votre consultant marketing exécute les actions, vous suivez les résultats en temps réel. Découvrez notre méthode.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <title>La Méthode ADAM — 90 jours pour reprendre le contrôle</title>
+  <meta name="description" content="La Méthode ADAM en détail : Analyser, Décider, Agir, Mesurer. Quatre étapes, 90 jours, un expert dédié. Résultats concrets mesurés.">
+  <link rel="stylesheet" href="css/design-system.css">
 </head>
 <body>
 
-  <!-- ========== HEADER ========== -->
-  <header class="header">
-    <div class="header-inner">
-      <a href="index.html" class="logo"><img src="images/logo.png" alt="Adam Boards — Analyser, Décider, Agir, Mesurer"></a>
-      <nav class="nav">
-        <a href="notre-methode.html" class="active">Notre méthode</a>
-        <a href="accompagnement.html">Accompagnement</a>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="wrap">
+      <a href="index.html" class="adam-logo" aria-label="Adam Boards">
+        <span class="logo-mark" aria-hidden="true"></span>
+        <span class="logo-text">Adam Boards<span class="dot">.</span></span>
+      </a>
+      <nav class="site-nav">
+        <a href="notre-methode.html">Méthode</a>
+        <a href="accompagnement.html">Offres</a>
         <a href="resultats.html">Résultats</a>
-        <a href="experts-comptables.html">Experts-comptables</a>
-        <a href="qui-sommes-nous.html">Qui sommes-nous</a>
-        <a href="diagnostic-gratuit.html" class="nav-cta">Diagnostic gratuit</a>
+        <a href="qui-sommes-nous.html">Équipe</a>
+        <a href="diagnostic-gratuit.html" class="cta" style="background: var(--c-accent); color: var(--c-primary);">Diagnostic gratuit ↗</a>
       </nav>
-      <button class="menu-toggle" aria-label="Ouvrir le menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+      <button class="menu-btn" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+    <div class="mobile-menu">
+      <a href="notre-methode.html">Méthode</a>
+      <a href="accompagnement.html">Offres</a>
+      <a href="resultats.html">Résultats</a>
+      <a href="qui-sommes-nous.html">Équipe</a>
+      <a href="diagnostic-gratuit.html">Diagnostic gratuit</a>
     </div>
   </header>
 
-  <!-- ========== HERO ========== -->
-  <section class="hero">
-    <div class="container">
-      <div class="hero-split">
-        <div>
-          <h1>On ne vous donne pas un outil. On vous donne deux experts et un tableau de bord pour voir les résultats en direct.</h1>
-          <p>Notre méthode en 3 étapes transforme vos données comptables en actions concrètes de croissance.</p>
-          <div class="btn-group">
-            <a href="diagnostic-gratuit.html" class="btn btn-primary btn-lg">Demander mon diagnostic gratuit</a>
-          </div>
-        </div>
-        <div class="hero-visual" style="padding: 40px 32px; flex-direction: column; gap: 0;">
-          <!-- Step 1 -->
-          <div style="display: flex; align-items: center; gap: 16px; width: 100%;">
-            <div style="width: 48px; height: 48px; border-radius: 50%; background: rgba(37,99,235,0.2); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M3 3v18h18" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"/><path d="M7 16l4-6 4 4 5-8" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
-            <div style="flex: 1;">
-              <div style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: #3B82F6; font-weight: 600;">Étape 1</div>
-              <div style="font-size: 0.95rem; color: var(--white); font-weight: 600;">Diagnostic financier</div>
-              <div style="font-size: 0.75rem; color: var(--gray-400);">Votre expert financier analyse votre FEC</div>
-            </div>
-            <div style="background: rgba(37,99,235,0.15); border-radius: 8px; padding: 8px 12px; text-align: center;">
-              <div style="font-size: 1.2rem; font-weight: 800; color: #3B82F6;">48h</div>
-              <div style="font-size: 0.65rem; color: var(--gray-400);">délai</div>
-            </div>
-          </div>
-
-          <!-- Connector -->
-          <div style="width: 2px; height: 24px; background: rgba(255,255,255,0.1); margin-left: 23px;"></div>
-
-          <!-- Step 2 -->
-          <div style="display: flex; align-items: center; gap: 16px; width: 100%;">
-            <div style="width: 48px; height: 48px; border-radius: 50%; background: rgba(245,158,11,0.2); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
-            <div style="flex: 1;">
-              <div style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: #F59E0B; font-weight: 600;">Étape 2</div>
-              <div style="font-size: 0.95rem; color: var(--white); font-weight: 600;">Actions concrètes</div>
-              <div style="font-size: 0.75rem; color: var(--gray-400);">Votre consultant marketing exécute les campagnes</div>
-            </div>
-            <div style="background: rgba(245,158,11,0.15); border-radius: 8px; padding: 8px 12px; text-align: center;">
-              <div style="font-size: 1.2rem; font-weight: 800; color: #F59E0B;">30j</div>
-              <div style="font-size: 0.65rem; color: var(--gray-400);">résultats</div>
-            </div>
-          </div>
-
-          <!-- Connector -->
-          <div style="width: 2px; height: 24px; background: rgba(255,255,255,0.1); margin-left: 23px;"></div>
-
-          <!-- Step 3 -->
-          <div style="display: flex; align-items: center; gap: 16px; width: 100%;">
-            <div style="width: 48px; height: 48px; border-radius: 50%; background: rgba(16,185,129,0.2); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="2" y="3" width="20" height="18" rx="2" stroke="#10B981" stroke-width="2"/><path d="M2 9h20" stroke="#10B981" stroke-width="2"/><path d="M7 14h4M7 17h2" stroke="#10B981" stroke-width="2" stroke-linecap="round"/><path d="M15 13v5" stroke="#10B981" stroke-width="2" stroke-linecap="round"/><path d="M18 15v3" stroke="#10B981" stroke-width="2" stroke-linecap="round"/></svg>
-            </div>
-            <div style="flex: 1;">
-              <div style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: #10B981; font-weight: 600;">Étape 3</div>
-              <div style="font-size: 0.95rem; color: var(--white); font-weight: 600;">Suivi temps réel</div>
-              <div style="font-size: 0.75rem; color: var(--gray-400);">Dashboard avec vos KPIs</div>
-            </div>
-            <div style="background: rgba(16,185,129,0.15); border-radius: 8px; padding: 8px 12px; text-align: center;">
-              <div style="font-size: 1.2rem; font-weight: 800; color: #10B981;">24/7</div>
-              <div style="font-size: 0.65rem; color: var(--gray-400);">accès</div>
-            </div>
-          </div>
-        </div>
+  <!-- HERO -->
+  <section class="bg-dark" style="position: relative; overflow: hidden;">
+    <div class="wrap" style="padding-top: var(--s-6); padding-bottom: var(--s-6); position: relative;">
+      <div aria-hidden="true" style="position: absolute; top: 50%; right: -40px; transform: translateY(-50%) rotate(-6deg); font-family: var(--f-mono); font-size: clamp(8rem, 18vw, 16rem); font-weight: 700; color: rgba(255,255,255,0.04); line-height: 0.85; pointer-events: none; user-select: none; letter-spacing: -0.05em;">90j</div>
+      <div style="position: relative; max-width: 720px;" class="reveal-stagger">
+        <span class="eyebrow accent">La Méthode</span>
+        <h1 style="color: var(--c-bg); margin-top: var(--s-2);">
+          <span style="color: var(--c-accent);">A</span>nalyser ·
+          <span style="color: var(--c-brand);">D</span>écider ·
+          <span style="color: var(--c-data);">A</span>gir ·
+          <span style="color: var(--c-warn);">M</span>esurer
+        </h1>
+        <p style="color: rgba(255,255,255,0.75); font-size: var(--t-lg); margin-top: var(--s-3); max-width: 540px;">
+          Quatre étapes. 90 jours. Un expert dédié. Un livrable concret à chaque phase. <strong style="color: var(--c-accent);">Résultats concrets mesurés.</strong>
+        </p>
       </div>
     </div>
   </section>
 
-  <!-- ========== STEP 1 ========== -->
-  <section class="section" id="etape-1">
-    <div class="container">
-      <div class="grid grid-2" style="align-items: center; gap: 60px;">
-        <div>
-          <span class="badge badge-blue">Étape 1</span>
-          <h2 style="margin-top: 12px;">Votre expert financier diagnostique vos chiffres</h2>
-          <p style="color: var(--gray-600); font-size: 1.05rem; margin-top: 16px; line-height: 1.7;">
-            Analyse du FEC, P&amp;L, SIG, KPIs, analyse 20/80 clients, détection des impayés et charges anormales.
-          </p>
-          <div class="card" style="margin-top: 24px; background: var(--blue-pale); border-color: transparent;">
-            <p style="color: var(--navy); font-weight: 600; font-size: 1rem; font-style: italic;">
-              "En 48h, notre expert financier identifie ce que votre comptable ne vous a jamais montré."
-            </p>
-          </div>
-          <div style="margin-top: 24px; display: flex; align-items: flex-start; gap: 12px;">
-            <div style="flex-shrink: 0; width: 32px; height: 32px; border-radius: 50%; background: var(--green-light); display: flex; align-items: center; justify-content: center; color: var(--green); font-weight: 700;">&#10003;</div>
-            <div>
-              <h4 style="margin-bottom: 4px;">Résultat</h4>
-              <p style="color: var(--gray-600); font-size: 0.95rem;">Un rapport clair avec vos vrais indicateurs et vos angles morts.</p>
-            </div>
-          </div>
-        </div>
-        <div style="background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius); padding: 24px; box-shadow: var(--shadow-md);">
-          <!-- Fake window bar -->
-          <div style="display: flex; gap: 6px; margin-bottom: 20px;">
-            <div style="width: 10px; height: 10px; border-radius: 50%; background: #EF4444;"></div>
-            <div style="width: 10px; height: 10px; border-radius: 50%; background: #F59E0B;"></div>
-            <div style="width: 10px; height: 10px; border-radius: 50%; background: #10B981;"></div>
-            <div style="flex: 1; text-align: center; font-size: 0.7rem; color: var(--gray-400); font-weight: 500;">Rapport de diagnostic — Adam Boards</div>
-          </div>
-          <!-- Header -->
-          <div style="background: var(--navy); border-radius: 8px; padding: 16px; margin-bottom: 16px;">
-            <div style="font-size: 0.7rem; color: var(--gray-400); text-transform: uppercase; letter-spacing: 0.05em;">Diagnostic financier</div>
-            <div style="font-size: 1.1rem; font-weight: 700; color: var(--white); margin-top: 4px;">Entreprise Martin — BTP</div>
-          </div>
-          <!-- KPIs row -->
-          <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 16px;">
-            <div style="background: var(--blue-pale); border-radius: 8px; padding: 12px; text-align: center;">
-              <div style="font-size: 0.65rem; color: var(--gray-500); margin-bottom: 4px;">Marge nette</div>
-              <div style="font-size: 1.3rem; font-weight: 800; color: var(--blue);">8,2%</div>
-              <div style="font-size: 0.6rem; color: var(--green); font-weight: 600; margin-top: 2px;">+2,1% vs N-1</div>
-            </div>
-            <div style="background: var(--gold-light); border-radius: 8px; padding: 12px; text-align: center;">
-              <div style="font-size: 0.65rem; color: var(--gray-500); margin-bottom: 4px;">Impayés détectés</div>
-              <div style="font-size: 1.3rem; font-weight: 800; color: #92400E;">4 200&euro;</div>
-              <div style="font-size: 0.6rem; color: var(--red); font-weight: 600; margin-top: 2px;">6 factures en retard</div>
-            </div>
-            <div style="background: var(--green-light); border-radius: 8px; padding: 12px; text-align: center;">
-              <div style="font-size: 0.65rem; color: var(--gray-500); margin-bottom: 4px;">Top 20% clients</div>
-              <div style="font-size: 1.3rem; font-weight: 800; color: #065F46;">78%</div>
-              <div style="font-size: 0.6rem; color: var(--gray-500); font-weight: 600; margin-top: 2px;">du CA total</div>
-            </div>
-          </div>
-          <!-- Alerts -->
-          <div style="font-size: 0.75rem; font-weight: 600; color: var(--navy); margin-bottom: 8px;">Alertes détectées</div>
-          <div style="display: flex; flex-direction: column; gap: 6px;">
-            <div style="display: flex; align-items: center; gap: 8px; background: #FEF2F2; border-radius: 6px; padding: 8px 12px;">
-              <div style="width: 8px; height: 8px; border-radius: 50%; background: var(--red); flex-shrink: 0;"></div>
-              <span style="font-size: 0.75rem; color: var(--gray-700);">6 factures impayées &gt; 60 jours (4 200&euro;)</span>
-            </div>
-            <div style="display: flex; align-items: center; gap: 8px; background: #FEF3C7; border-radius: 6px; padding: 8px 12px;">
-              <div style="width: 8px; height: 8px; border-radius: 50%; background: var(--gold); flex-shrink: 0;"></div>
-              <span style="font-size: 0.75rem; color: var(--gray-700);">Charge véhicule +34% vs secteur</span>
-            </div>
-            <div style="display: flex; align-items: center; gap: 8px; background: var(--blue-pale); border-radius: 6px; padding: 8px 12px;">
-              <div style="width: 8px; height: 8px; border-radius: 50%; background: var(--blue); flex-shrink: 0;"></div>
-              <span style="font-size: 0.75rem; color: var(--gray-700);">3 clients représentent 78% du CA — risque de dépendance</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== STEP 2 ========== -->
-  <section class="section section-light" id="etape-2">
-    <div class="container">
-      <div class="grid grid-2" style="align-items: center; gap: 60px;">
-        <div style="background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius); padding: 24px; box-shadow: var(--shadow-md);">
-          <!-- Fake window bar -->
-          <div style="display: flex; gap: 6px; margin-bottom: 20px;">
-            <div style="width: 10px; height: 10px; border-radius: 50%; background: #EF4444;"></div>
-            <div style="width: 10px; height: 10px; border-radius: 50%; background: #F59E0B;"></div>
-            <div style="width: 10px; height: 10px; border-radius: 50%; background: #10B981;"></div>
-            <div style="flex: 1; text-align: center; font-size: 0.7rem; color: var(--gray-400); font-weight: 500;">Actions en cours — Adam Boards</div>
-          </div>
-          <!-- Header -->
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
-            <div>
-              <div style="font-size: 0.75rem; font-weight: 600; color: var(--navy);">Actions du mois</div>
-              <div style="font-size: 0.65rem; color: var(--gray-400);">Exécutées par notre consultant marketing</div>
-            </div>
-            <div style="background: var(--green-light); color: #065F46; font-size: 0.7rem; font-weight: 600; padding: 4px 10px; border-radius: 12px;">3/3 terminées</div>
-          </div>
-          <!-- Action 1 -->
-          <div style="border: 1px solid var(--gray-200); border-radius: 8px; padding: 14px; margin-bottom: 10px;">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
-              <div style="display: flex; align-items: center; gap: 8px;">
-                <div style="width: 24px; height: 24px; border-radius: 6px; background: var(--gold-light); display: flex; align-items: center; justify-content: center;">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 100 7h5a3.5 3.5 0 110 7H6" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/></svg>
-                </div>
-                <span style="font-size: 0.8rem; font-weight: 600; color: var(--navy);">Relance impayés</span>
-              </div>
-              <span style="font-size: 0.65rem; font-weight: 600; color: var(--green); background: var(--green-light); padding: 2px 8px; border-radius: 10px;">Terminée</span>
-            </div>
-            <div style="font-size: 0.75rem; color: var(--gray-500); margin-bottom: 8px;">6 factures relancées par email + téléphone</div>
-            <div style="display: flex; justify-content: space-between; align-items: center;">
-              <div style="background: var(--gray-100); border-radius: 20px; height: 6px; flex: 1; margin-right: 12px;">
-                <div style="background: var(--green); height: 6px; border-radius: 20px; width: 100%;"></div>
-              </div>
-              <span style="font-size: 0.7rem; font-weight: 700; color: var(--green);">4 200&euro; récupérés</span>
-            </div>
-          </div>
-          <!-- Action 2 -->
-          <div style="border: 1px solid var(--gray-200); border-radius: 8px; padding: 14px; margin-bottom: 10px;">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
-              <div style="display: flex; align-items: center; gap: 8px;">
-                <div style="width: 24px; height: 24px; border-radius: 6px; background: var(--blue-pale); display: flex; align-items: center; justify-content: center;">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="#2563EB" stroke-width="2.5"/><path d="M22 6l-10 7L2 6" stroke="#2563EB" stroke-width="2.5" stroke-linecap="round"/></svg>
-                </div>
-                <span style="font-size: 0.8rem; font-weight: 600; color: var(--navy);">Campagne fidélisation 20/80</span>
-              </div>
-              <span style="font-size: 0.65rem; font-weight: 600; color: var(--green); background: var(--green-light); padding: 2px 8px; border-radius: 10px;">Terminée</span>
-            </div>
-            <div style="font-size: 0.75rem; color: var(--gray-500); margin-bottom: 8px;">Séquence email pour les top 20% clients</div>
-            <div style="display: flex; justify-content: space-between; align-items: center;">
-              <div style="background: var(--gray-100); border-radius: 20px; height: 6px; flex: 1; margin-right: 12px;">
-                <div style="background: var(--green); height: 6px; border-radius: 20px; width: 100%;"></div>
-              </div>
-              <span style="font-size: 0.7rem; font-weight: 700; color: var(--blue);">42% taux d'ouverture</span>
-            </div>
-          </div>
-          <!-- Action 3 -->
-          <div style="border: 1px solid var(--gray-200); border-radius: 8px; padding: 14px;">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
-              <div style="display: flex; align-items: center; gap: 8px;">
-                <div style="width: 24px; height: 24px; border-radius: 6px; background: var(--green-light); display: flex; align-items: center; justify-content: center;">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke="#10B981" stroke-width="2.5" stroke-linecap="round"/><circle cx="9" cy="7" r="4" stroke="#10B981" stroke-width="2.5"/></svg>
-                </div>
-                <span style="font-size: 0.8rem; font-weight: 600; color: var(--navy);">Mise en place CRM</span>
-              </div>
-              <span style="font-size: 0.65rem; font-weight: 600; color: var(--green); background: var(--green-light); padding: 2px 8px; border-radius: 10px;">Terminée</span>
-            </div>
-            <div style="font-size: 0.75rem; color: var(--gray-500); margin-bottom: 8px;">Configuration + import de 124 contacts</div>
-            <div style="display: flex; justify-content: space-between; align-items: center;">
-              <div style="background: var(--gray-100); border-radius: 20px; height: 6px; flex: 1; margin-right: 12px;">
-                <div style="background: var(--green); height: 6px; border-radius: 20px; width: 100%;"></div>
-              </div>
-              <span style="font-size: 0.7rem; font-weight: 700; color: var(--green);">124 contacts importés</span>
-            </div>
-          </div>
-        </div>
-        <div>
-          <span class="badge badge-gold">Étape 2</span>
-          <h2 style="margin-top: 12px;">Votre consultant marketing exécute les actions</h2>
-          <p style="color: var(--gray-600); font-size: 1.05rem; margin-top: 16px; line-height: 1.7;">
-            Relance des impayés, campagnes de fidélisation 20/80, mise en place CRM, séquences email automatisées.
-          </p>
-          <div class="card" style="margin-top: 24px; background: var(--gold-light); border-color: transparent;">
-            <p style="color: var(--navy); font-weight: 600; font-size: 1rem; font-style: italic;">
-              "Pendant que vous gérez votre activité, votre consultant marketing lance les actions qui génèrent du résultat."
-            </p>
-          </div>
-          <div style="margin-top: 24px; display: flex; align-items: flex-start; gap: 12px;">
-            <div style="flex-shrink: 0; width: 32px; height: 32px; border-radius: 50%; background: var(--green-light); display: flex; align-items: center; justify-content: center; color: var(--green); font-weight: 700;">&#10003;</div>
-            <div>
-              <h4 style="margin-bottom: 4px;">Résultat</h4>
-              <p style="color: var(--gray-600); font-size: 0.95rem;">Des actions concrètes exécutées, pas des recommandations dans un tiroir.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== STEP 3 ========== -->
-  <section class="section" id="etape-3">
-    <div class="container">
-      <div class="grid grid-2" style="align-items: center; gap: 60px;">
-        <div>
-          <span class="badge badge-green">Étape 3</span>
-          <h2 style="margin-top: 12px;">Vous suivez tout en temps réel</h2>
-          <p style="color: var(--gray-600); font-size: 1.05rem; margin-top: 16px; line-height: 1.7;">
-            Dashboard avec KPIs, P&amp;L, évolution mensuelle, comparaison N/N-1, suivi des actions en cours.
-          </p>
-          <div class="card" style="margin-top: 24px; background: var(--green-light); border-color: transparent;">
-            <p style="color: var(--navy); font-weight: 600; font-size: 1rem; font-style: italic;">
-              "Chaque lundi matin, vous ouvrez votre dashboard et vous savez exactement où vous en êtes."
-            </p>
-          </div>
-          <div style="margin-top: 24px; display: flex; align-items: flex-start; gap: 12px;">
-            <div style="flex-shrink: 0; width: 32px; height: 32px; border-radius: 50%; background: var(--green-light); display: flex; align-items: center; justify-content: center; color: var(--green); font-weight: 700;">&#10003;</div>
-            <div>
-              <h4 style="margin-bottom: 4px;">Résultat</h4>
-              <p style="color: var(--gray-600); font-size: 0.95rem;">Visibilité totale sans appeler personne.</p>
-            </div>
-          </div>
-        </div>
-        <div style="background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius); padding: 24px; box-shadow: var(--shadow-md);">
-          <!-- Fake window bar -->
-          <div style="display: flex; gap: 6px; margin-bottom: 20px;">
-            <div style="width: 10px; height: 10px; border-radius: 50%; background: #EF4444;"></div>
-            <div style="width: 10px; height: 10px; border-radius: 50%; background: #F59E0B;"></div>
-            <div style="width: 10px; height: 10px; border-radius: 50%; background: #10B981;"></div>
-            <div style="flex: 1; text-align: center; font-size: 0.7rem; color: var(--gray-400); font-weight: 500;">Dashboard — Adam Boards</div>
-          </div>
-          <!-- KPIs row -->
-          <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-bottom: 16px;">
-            <div style="background: var(--navy); border-radius: 8px; padding: 14px;">
-              <div style="font-size: 0.65rem; color: var(--gray-400); margin-bottom: 4px;">Trésorerie</div>
-              <div style="font-size: 1.4rem; font-weight: 800; color: var(--white);">24 850&euro;</div>
-              <div style="font-size: 0.6rem; color: var(--green); font-weight: 600; margin-top: 2px;">+12% ce mois</div>
-            </div>
-            <div style="background: var(--navy); border-radius: 8px; padding: 14px;">
-              <div style="font-size: 0.65rem; color: var(--gray-400); margin-bottom: 4px;">CA cumulé</div>
-              <div style="font-size: 1.4rem; font-weight: 800; color: var(--white);">87 400&euro;</div>
-              <div style="font-size: 0.6rem; color: var(--green); font-weight: 600; margin-top: 2px;">+8% vs N-1</div>
-            </div>
-          </div>
-          <!-- Chart mock -->
-          <div style="background: var(--gray-50); border: 1px solid var(--gray-200); border-radius: 8px; padding: 16px; margin-bottom: 16px;">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
-              <span style="font-size: 0.75rem; font-weight: 600; color: var(--navy);">Évolution mensuelle du CA</span>
-              <span style="font-size: 0.65rem; color: var(--gray-400);">Jan — Avr 2026</span>
-            </div>
-            <!-- Bar chart -->
-            <div style="display: flex; align-items: flex-end; gap: 8px; height: 80px;">
-              <div style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 4px;">
-                <div style="width: 100%; background: var(--blue); border-radius: 4px 4px 0 0; height: 45px;"></div>
-                <span style="font-size: 0.6rem; color: var(--gray-400);">Jan</span>
-              </div>
-              <div style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 4px;">
-                <div style="width: 100%; background: var(--blue); border-radius: 4px 4px 0 0; height: 52px;"></div>
-                <span style="font-size: 0.6rem; color: var(--gray-400);">Fév</span>
-              </div>
-              <div style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 4px;">
-                <div style="width: 100%; background: var(--blue); border-radius: 4px 4px 0 0; height: 60px;"></div>
-                <span style="font-size: 0.6rem; color: var(--gray-400);">Mar</span>
-              </div>
-              <div style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 4px;">
-                <div style="width: 100%; background: var(--blue-light); border-radius: 4px 4px 0 0; height: 72px; border: 2px solid var(--blue);"></div>
-                <span style="font-size: 0.6rem; color: var(--navy); font-weight: 600;">Avr</span>
-              </div>
-            </div>
-          </div>
-          <!-- Bottom row -->
-          <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
-            <div style="background: var(--green-light); border-radius: 8px; padding: 10px; text-align: center;">
-              <div style="font-size: 0.6rem; color: var(--gray-500);">Impayés</div>
-              <div style="font-size: 1rem; font-weight: 800; color: #065F46;">0&euro;</div>
-              <div style="font-size: 0.55rem; color: var(--green);">Tout réglé</div>
-            </div>
-            <div style="background: var(--blue-pale); border-radius: 8px; padding: 10px; text-align: center;">
-              <div style="font-size: 0.6rem; color: var(--gray-500);">Marge nette</div>
-              <div style="font-size: 1rem; font-weight: 800; color: var(--blue);">10,3%</div>
-              <div style="font-size: 0.55rem; color: var(--green);">+2,1pts</div>
-            </div>
-            <div style="background: var(--gold-light); border-radius: 8px; padding: 10px; text-align: center;">
-              <div style="font-size: 0.6rem; color: var(--gray-500);">Actions</div>
-              <div style="font-size: 1rem; font-weight: 800; color: #92400E;">3/3</div>
-              <div style="font-size: 0.55rem; color: var(--green);">Terminées</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== POUR QUI ========== -->
-  <section class="section section-light" id="pour-qui">
-    <div class="container">
-      <div class="section-header">
-        <span class="badge badge-gold">Pour qui</span>
-        <h2>Cette méthode est faite pour vous si...</h2>
-      </div>
-      <div class="grid grid-2" style="max-width: 800px; margin: 0 auto;">
-        <div class="card" style="border-left: 4px solid var(--green); border-top: none;">
-          <h4 style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
-            <span style="color: var(--green); font-weight: 700;">&#10003;</span>
-            Dirigeant de TPE (1 à 20 salariés)
-          </h4>
-          <p style="color: var(--gray-600); font-size: 0.9rem;">Artisan, commerçant, prestataire de services — vous gérez votre entreprise au quotidien mais vous n'avez pas le temps de suivre vos chiffres.</p>
-        </div>
-        <div class="card" style="border-left: 4px solid var(--green); border-top: none;">
-          <h4 style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
-            <span style="color: var(--green); font-weight: 700;">&#10003;</span>
-            Vous pilotez à l'aveugle
-          </h4>
-          <p style="color: var(--gray-600); font-size: 0.9rem;">Vous attendez le bilan annuel pour savoir où vous en êtes. Entre-temps, vous prenez vos décisions au feeling.</p>
-        </div>
-        <div class="card" style="border-left: 4px solid var(--green); border-top: none;">
-          <h4 style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
-            <span style="color: var(--green); font-weight: 700;">&#10003;</span>
-            Vous avez des impayés qui dorment
-          </h4>
-          <p style="color: var(--gray-600); font-size: 0.9rem;">Des factures non relancées, des créances oubliées — de l'argent qui vous appartient mais que vous ne récupérez pas.</p>
-        </div>
-        <div class="card" style="border-left: 4px solid var(--green); border-top: none;">
-          <h4 style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
-            <span style="color: var(--green); font-weight: 700;">&#10003;</span>
-            Vous voulez des résultats, pas un outil de plus
-          </h4>
-          <p style="color: var(--gray-600); font-size: 0.9rem;">Vous avez déjà essayé des logiciels ou des consultants. Vous cherchez quelqu'un qui fait le travail pour vous.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== RESULTATS CONCRETS ========== -->
-  <section class="section" id="preuves">
-    <div class="container">
-      <div class="section-header">
-        <span class="badge badge-blue">Résultats prouvés</span>
-        <h2>Ce que notre méthode produit concrètement</h2>
-      </div>
-      <div class="stats" style="justify-content: center; margin-bottom: 48px;">
-        <div class="stat-item">
-          <div class="stat-number">3 200&euro;</div>
-          <div class="stat-label">de créances récupérées en moyenne (mois 1)</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number">92%</div>
-          <div class="stat-label">de clients renouvellent après 3 mois</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number">30j</div>
-          <div class="stat-label">pour les premiers résultats concrets</div>
-        </div>
-      </div>
-      <div class="grid grid-2" style="max-width: 900px; margin: 0 auto; gap: 32px;">
-        <div class="testimonial">
-          <p>Je n'avais aucune idée de mes créances réelles. En 30 jours, ils m'ont aidé à récupérer 4 200&euro; d'impayés que j'avais oubliés.</p>
-          <div class="testimonial-author">Dirigeant de TPE, secteur BTP</div>
-          <div class="testimonial-role">Formule Déclic — client depuis 2024</div>
-        </div>
-        <div class="testimonial">
-          <p>Leur expert financier a identifié que 40% de mes prestations avaient une marge négative. En 3 mois, ma marge nette a gagné 12 points.</p>
-          <div class="testimonial-author">Gérante de salon de beauté</div>
-          <div class="testimonial-role">Formule Accélérateur — cliente depuis 2024</div>
-        </div>
-      </div>
-      <div style="text-align: center; margin-top: 32px;">
-        <a href="resultats.html" class="btn btn-outline">Voir tous les cas clients</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== CE QUI NOUS DIFFERENCIE ========== -->
-  <section class="section section-light" id="difference">
-    <div class="container">
-      <div class="section-header">
-        <span class="badge badge-blue">Pourquoi Adam Boards</span>
-        <h2>Ce qui nous différencie</h2>
-        <p>Ni un logiciel, ni un audit ponctuel. Un accompagnement complet avec des résultats mesurables.</p>
-      </div>
-      <div class="grid grid-3">
-        <div class="card" style="border-top: 3px solid var(--blue);">
-          <div class="card-icon card-icon-blue">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="2" y="3" width="20" height="18" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 9h20M8 9v12" stroke="currentColor" stroke-width="2"/></svg>
-          </div>
-          <h3>vs Expert-comptable seul</h3>
-          <p>Il produit vos bilans. Nous les transformons en actions.</p>
-          <p style="margin-top: 12px; font-size: 0.85rem; color: var(--gray-400);">Votre comptable fait son travail. Mais il ne vous dit pas quoi faire pour améliorer vos marges ou relancer vos impayés.</p>
-        </div>
-        <div class="card" style="border-top: 3px solid var(--gold);">
-          <div class="card-icon card-icon-gold">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/><path d="M3 9h18M9 9v12" stroke="currentColor" stroke-width="2"/><path d="M13 13h4M13 17h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-          </div>
-          <h3>vs Pennylane / Agicap</h3>
-          <p>Ils vous donnent un outil. Nous, on exécute pour vous.</p>
-          <p style="margin-top: 12px; font-size: 0.85rem; color: var(--gray-400);">Un tableau de bord sans personne pour agir, c'est un écran de plus à regarder. Nous faisons le travail.</p>
-        </div>
-        <div class="card" style="border-top: 3px solid var(--green);">
-          <div class="card-icon card-icon-green">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 8v4l3 3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-          </div>
-          <h3>vs Consultant ponctuel</h3>
-          <p>Il fait un audit et repart. Nous restons et on mesure les résultats.</p>
-          <p style="margin-top: 12px; font-size: 0.85rem; color: var(--gray-400);">Un rapport de 50 pages qui dort dans un tiroir, ça ne fait pas grandir votre entreprise. Nous, on reste jusqu'aux résultats.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== TRANSITION TARIFS ========== -->
+  <!-- TIMELINE 4 ÉTAPES -->
   <section class="section">
-    <div class="container">
-      <div style="max-width: 720px; margin: 0 auto; text-align: center;">
-        <span class="badge badge-gold">Et concrètement ?</span>
-        <h2 style="margin-top: 12px;">Un investissement, pas une dépense</h2>
-        <p style="color: var(--gray-600); font-size: 1.05rem; margin-top: 12px; line-height: 1.7;">Trois formules adaptées à votre situation. Moins cher qu'un DAF à mi-temps, moins cher qu'un commercial — et des résultats mesurables dès le premier mois. Les tarifs sont discutés lors du diagnostic gratuit.</p>
-        <div style="display: flex; justify-content: center; gap: 12px; margin-top: 24px; flex-wrap: wrap;">
-          <a href="accompagnement.html" class="btn btn-primary">Découvrir les formules</a>
-          <a href="diagnostic-gratuit.html" class="btn btn-outline">Commencer par le diagnostic gratuit</a>
+    <div class="wrap">
+      <div class="reveal" style="margin-bottom: var(--s-5);">
+        <span class="eyebrow">01 / Le programme</span>
+        <h2 style="margin-top: var(--s-2); max-width: 720px;">Un parcours structuré, des livrables concrets.</h2>
+      </div>
+
+      <!-- Étape A -->
+      <div class="reveal" style="display: grid; grid-template-columns: 1fr; gap: var(--s-3); padding: var(--s-4) 0; border-top: 2px solid var(--c-accent);">
+        <div style="display: grid; grid-template-columns: 1fr; gap: var(--s-3);">
+          <div style="display: flex; align-items: baseline; gap: var(--s-3); flex-wrap: wrap;">
+            <div class="stat" style="font-size: 4rem; color: var(--c-accent); line-height: 1;">A</div>
+            <div>
+              <div class="t-mono t-xs" style="text-transform: uppercase; letter-spacing: 0.12em; color: var(--c-gray-500);">Sem. 1–2 · Phase 01</div>
+              <h3 style="font-size: 2rem; margin-top: 4px;">Analyser</h3>
+            </div>
+          </div>
+        </div>
+        <div class="split-40-60" style="gap: var(--s-4);">
+          <div>
+            <p style="font-size: var(--t-lg); color: var(--c-gray-500);">
+              Nous importons vos données comptables (FEC) et réalisons un diagnostic financier complet en moins de 48h. Chaque ligne est passée au crible.
+            </p>
+          </div>
+          <div class="card" style="background: var(--c-gray-50); border-left: 3px solid var(--c-accent);">
+            <div class="t-mono t-xs" style="text-transform: uppercase; letter-spacing: 0.1em; color: var(--c-gray-500); margin-bottom: var(--s-2);">Ce que nous identifions</div>
+            <ul style="list-style: none; padding: 0; display: grid; gap: 8px; font-size: 0.95rem;">
+              <li>→ Marges réelles par activité</li>
+              <li>→ Postes de dépenses anormaux</li>
+              <li>→ Impayés dormants &amp; créances en retard</li>
+              <li>→ Anomalies sur les comptes</li>
+            </ul>
+            <div class="t-mono t-xs" style="color: var(--c-accent); margin-top: var(--s-3); font-weight: 600;">📦 Livrable : votre Bilan Flash</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Étape D -->
+      <div class="reveal" style="display: grid; grid-template-columns: 1fr; gap: var(--s-3); padding: var(--s-4) 0; border-top: 2px solid var(--c-brand);">
+        <div style="display: flex; align-items: baseline; gap: var(--s-3); flex-wrap: wrap;">
+          <div class="stat" style="font-size: 4rem; color: var(--c-brand); line-height: 1;">D</div>
+          <div>
+            <div class="t-mono t-xs" style="text-transform: uppercase; letter-spacing: 0.12em; color: var(--c-gray-500);">Sem. 3–6 · Phase 02</div>
+            <h3 style="font-size: 2rem; margin-top: 4px;">Décider</h3>
+          </div>
+        </div>
+        <div class="split-40-60" style="gap: var(--s-4);">
+          <div>
+            <p style="font-size: var(--t-lg); color: var(--c-gray-500);">
+              Un rendez-vous stratégique avec votre expert pour transformer le diagnostic en plan d'action. Pas 20 actions : 3 à 5 maximum.
+            </p>
+          </div>
+          <div class="card" style="background: var(--c-gray-50); border-left: 3px solid var(--c-brand);">
+            <div class="t-mono t-xs" style="text-transform: uppercase; letter-spacing: 0.1em; color: var(--c-gray-500); margin-bottom: var(--s-2);">Ce que nous décidons ensemble</div>
+            <ul style="list-style: none; padding: 0; display: grid; gap: 8px; font-size: 0.95rem;">
+              <li>→ RDV stratégique avec votre expert</li>
+              <li>→ 3 à 5 actions prioritaires (max)</li>
+              <li>→ Objectifs chiffrés mesurables</li>
+              <li>→ Calendrier précis de mise en œuvre</li>
+            </ul>
+            <div class="t-mono t-xs" style="color: var(--c-brand); margin-top: var(--s-3); font-weight: 600;">📦 Livrable : votre Feuille de Route</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Étape A (Agir) -->
+      <div class="reveal" style="display: grid; grid-template-columns: 1fr; gap: var(--s-3); padding: var(--s-4) 0; border-top: 2px solid var(--c-data);">
+        <div style="display: flex; align-items: baseline; gap: var(--s-3); flex-wrap: wrap;">
+          <div class="stat" style="font-size: 4rem; color: var(--c-data); line-height: 1;">A</div>
+          <div>
+            <div class="t-mono t-xs" style="text-transform: uppercase; letter-spacing: 0.12em; color: var(--c-gray-500);">Sem. 7–12 · Phase 03</div>
+            <h3 style="font-size: 2rem; margin-top: 4px;">Agir</h3>
+          </div>
+        </div>
+        <div class="split-40-60" style="gap: var(--s-4);">
+          <div>
+            <p style="font-size: var(--t-lg); color: var(--c-gray-500);">
+              On ne vous dit pas quoi faire — on le fait avec vous, et pour vous. Chaque action est exécutée, mesurée, documentée.
+            </p>
+          </div>
+          <div class="card" style="background: var(--c-gray-50); border-left: 3px solid var(--c-data);">
+            <div class="t-mono t-xs" style="text-transform: uppercase; letter-spacing: 0.1em; color: var(--c-gray-500); margin-bottom: var(--s-2);">Ce que nous exécutons</div>
+            <ul style="list-style: none; padding: 0; display: grid; gap: 8px; font-size: 0.95rem;">
+              <li>→ Mise en œuvre du plan d'action</li>
+              <li>→ Relance systématique des impayés</li>
+              <li>→ Optimisation des charges récurrentes</li>
+              <li>→ Lancement de campagnes de développement des ventes</li>
+            </ul>
+            <div class="t-mono t-xs" style="color: var(--c-data); margin-top: var(--s-3); font-weight: 600;">📦 Livrable : actions exécutées + premiers résultats</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Étape M -->
+      <div class="reveal" style="display: grid; grid-template-columns: 1fr; gap: var(--s-3); padding: var(--s-4) 0; border-top: 2px solid var(--c-warn);">
+        <div style="display: flex; align-items: baseline; gap: var(--s-3); flex-wrap: wrap;">
+          <div class="stat" style="font-size: 4rem; color: var(--c-warn); line-height: 1;">M</div>
+          <div>
+            <div class="t-mono t-xs" style="text-transform: uppercase; letter-spacing: 0.12em; color: var(--c-gray-500);">En continu · Phase 04</div>
+            <h3 style="font-size: 2rem; margin-top: 4px;">Mesurer</h3>
+          </div>
+        </div>
+        <div class="split-40-60" style="gap: var(--s-4);">
+          <div>
+            <p style="font-size: var(--t-lg); color: var(--c-gray-500);">
+              Votre Tableau de Bord ADAM se met à jour en temps réel. Vous suivez vos objectifs vs réalisé, votre trésorerie prévisionnelle, vos marges par activité et l'impact réel de vos décisions sur votre rentabilité — en un coup d'œil.
+            </p>
+          </div>
+          <div class="card" style="background: var(--c-gray-50); border-left: 3px solid var(--c-warn);">
+            <div class="t-mono t-xs" style="text-transform: uppercase; letter-spacing: 0.1em; color: var(--c-gray-500); margin-bottom: var(--s-2);">Ce que vous voyez en permanence</div>
+            <ul style="list-style: none; padding: 0; display: grid; gap: 8px; font-size: 0.95rem;">
+              <li>→ Tableau de Bord ADAM temps réel</li>
+              <li>→ Suivi objectifs vs réalisé</li>
+              <li>→ Trésorerie prévisionnelle</li>
+              <li>→ Marges par activité</li>
+              <li>→ Ajustement mensuel avec votre expert</li>
+            </ul>
+            <div class="t-mono t-xs" style="color: var(--c-warn); margin-top: var(--s-3); font-weight: 600;">📦 Livrable : accès permanent au dashboard</div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ========== MINI FAQ ========== -->
-  <section class="section section-light">
-    <div class="container">
-      <div class="section-header">
-        <h2>Les questions qu'on nous pose le plus</h2>
-      </div>
-      <div style="max-width: 720px; margin: 0 auto;">
-        <div class="faq-item">
-          <div class="faq-question">Combien de temps ça prend de mon côté ?</div>
-          <div class="faq-answer">
-            Très peu. Vous fournissez votre FEC (votre expert-comptable l'exporte en 2 minutes) et vous participez à un appel de restitution de 30 minutes. Ensuite, nos experts travaillent pour vous. Vous suivez les résultats sur votre dashboard quand vous le souhaitez.
-          </div>
+  <!-- PAS UN LOGICIEL -->
+  <section class="section bg-soft">
+    <div class="wrap">
+      <div class="split-40-60" style="align-items: center;">
+        <div class="reveal">
+          <span class="eyebrow accent">02 / Notre différence</span>
+          <h2 style="margin-top: var(--s-2);">Le dashboard est un <span class="text-accent">moyen</span>. Pas une fin.</h2>
         </div>
-        <div class="faq-item">
-          <div class="faq-question">Est-ce que ça remplace mon expert-comptable ?</div>
-          <div class="faq-answer">
-            Non. Votre comptable produit vos bilans et vos déclarations — c'est son métier. Nous, on prend ses données et on les transforme en actions concrètes : relance des impayés, campagnes de fidélisation, pilotage en temps réel. Les deux se complètent parfaitement.
-          </div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-question">Et si ça ne marche pas ?</div>
-          <div class="faq-answer">
-            Le diagnostic est gratuit — vous ne risquez rien pour découvrir vos leviers. Si vous choisissez l'accompagnement, 92% de nos clients renouvellent après 3 mois. Les résultats sont mesurables et visibles sur votre dashboard : créances récupérées, marge améliorée, nouveaux clients. Si les chiffres ne bougent pas, vous le verrez vous-même.
-          </div>
-        </div>
-        <div style="text-align: center; margin-top: 24px;">
-          <a href="faq.html" style="font-size: 0.9rem; font-weight: 600;">Voir toutes les questions &rarr;</a>
+        <div class="reveal">
+          <p style="font-size: var(--t-lg); color: var(--c-gray-500); margin-bottom: var(--s-3);">
+            Le Tableau de Bord ADAM est inclus dans la méthode. Mais ce qui change vraiment votre rentabilité, c'est l'<strong style="color: var(--c-primary);">expertise humaine</strong> qui transforme la donnée en décision, et la décision en résultat.
+          </p>
+          <p style="font-size: var(--t-lg); color: var(--c-gray-500);">
+            Un outil seul ne résout rien. C'est pour ça que nous mesurons un résultat — pas seulement un accès.
+          </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ========== CTA SECTION ========== -->
-  <section class="cta-section">
-    <div class="container">
-      <h2>Prêt à découvrir ce que vos chiffres cachent ?</h2>
-      <p>Un diagnostic gratuit de 30 minutes pour identifier vos leviers de croissance et vos angles morts financiers.</p>
-      <a href="diagnostic-gratuit.html" class="btn btn-gold btn-lg">Demander mon diagnostic gratuit</a>
-      <div style="margin-top: 16px; display: flex; justify-content: center; gap: 24px; flex-wrap: wrap;">
-        <span style="font-size: 0.8rem; color: var(--gray-400); display: flex; align-items: center; gap: 6px;">
-          <svg width="16" height="16" viewBox="0 0 20 20" fill="none"><path d="M10 1L2 5v5c0 4.4 3.4 8.5 8 9.5 4.6-1 8-5.1 8-9.5V5l-8-4z" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
-          Données hébergées en France
-        </span>
-        <span style="font-size: 0.8rem; color: var(--gray-400); display: flex; align-items: center; gap: 6px;">
-          <svg width="16" height="16" viewBox="0 0 20 20" fill="none"><path d="M3 10l5 5L17 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          100% gratuit, sans engagement
-        </span>
-        <span style="font-size: 0.8rem; color: var(--gray-400); display: flex; align-items: center; gap: 6px;">
-          <svg width="16" height="16" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8.5" stroke="currentColor" stroke-width="1.5"/><path d="M10 5v5l3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-          Réponse sous 24h
-        </span>
+  <!-- POUR QUI -->
+  <section class="section">
+    <div class="wrap">
+      <div class="reveal" style="margin-bottom: var(--s-5);">
+        <span class="eyebrow">03 / Pour qui</span>
+        <h2 style="margin-top: var(--s-2); max-width: 720px;">La Méthode ADAM est faite pour vous si…</h2>
+      </div>
+      <div class="grid-4 reveal-stagger">
+        <article class="card card-tilt"><div class="t-mono t-xs t-mute">N°01</div><h3 style="font-size: 1.2rem; margin-top: var(--s-1);">Vous dirigez une TPE</h3><p class="t-sm t-mute" style="margin-top: var(--s-1);">De 1 à 50 salariés.</p></article>
+        <article class="card card-tilt"><div class="t-mono t-xs t-mute">N°02</div><h3 style="font-size: 1.2rem; margin-top: var(--s-1);">Vous n'avez pas de DAF</h3><p class="t-sm t-mute" style="margin-top: var(--s-1);">Pas le budget pour recruter un directeur financier.</p></article>
+        <article class="card card-tilt"><div class="t-mono t-xs t-mute">N°03</div><h3 style="font-size: 1.2rem; margin-top: var(--s-1);">Vous voulez du concret</h3><p class="t-sm t-mute" style="margin-top: var(--s-1);">Pas un audit, des résultats mesurables.</p></article>
+        <article class="card card-tilt"><div class="t-mono t-xs t-mute">N°04</div><h3 style="font-size: 1.2rem; margin-top: var(--s-1);">Vous êtes prêt·e à agir</h3><p class="t-sm t-mute" style="margin-top: var(--s-1);">90 jours pour transformer vos chiffres.</p></article>
       </div>
     </div>
   </section>
 
-  <!-- ========== FOOTER ========== -->
-  <footer class="footer">
-    <div class="container">
+  <!-- GARANTIE -->
+  <section class="section bg-dark" style="position: relative; overflow: hidden;">
+    <div class="wrap" style="position: relative;">
+      <div aria-hidden="true" style="position: absolute; top: 50%; right: -60px; transform: translateY(-50%) rotate(-6deg); font-family: var(--f-mono); font-size: clamp(8rem, 20vw, 16rem); font-weight: 700; color: rgba(244,204,26,0.06); line-height: 0.85; pointer-events: none; user-select: none;">+€</div>
+      <div style="max-width: 720px; position: relative;">
+        <span class="eyebrow accent">04 / Notre engagement</span>
+        <h2 style="color: var(--c-bg); margin-top: var(--s-2);">Des résultats <span class="text-accent">concrets et mesurés</span>.<br>Pas des promesses.</h2>
+        <p style="color: rgba(255,255,255,0.7); font-size: var(--t-lg); margin-top: var(--s-3); margin-bottom: var(--s-4);">
+          Nous nous engageons sur des résultats tangibles : impayés récupérés, marges améliorées, trésorerie maîtrisée. Chaque mois, vous suivez l'impact réel de vos décisions sur votre rentabilité.
+        </p>
+        <a href="diagnostic-gratuit.html" class="btn btn-accent">Réserver mon diagnostic <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="wrap">
       <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="index.html" class="logo"><img src="images/logo.png" alt="Adam Boards"></a>
-          <p>Accompagnement financier et marketing pour les dirigeants de TPE en France. Vos chiffres, vos actions, vos résultats — en temps réel.</p>
-        </div>
         <div>
-          <h4>Méthode</h4>
-          <ul>
-            <li><a href="notre-methode.html">Notre méthode</a></li>
-            <li><a href="accompagnement.html">Accompagnement</a></li>
-            <li><a href="resultats.html">Résultats clients</a></li>
-            <li><a href="experts-comptables.html">Experts-comptables</a></li>
-          </ul>
+          <div class="adam-logo">
+            <span class="logo-mark" aria-hidden="true"></span>
+            <span class="logo-text" style="color: var(--c-brand);">Adam Boards<span class="dot" style="color: var(--c-accent);">.</span></span>
+          </div>
+          <p style="font-size: 0.92rem; color: rgba(255,255,255,0.65); margin-top: var(--s-2); max-width: 320px;">Croquer dans la pomme de la rentabilité.<br>Analyser, Décider, Agir, Mesurer.<br><span style="color: rgba(244,204,26,0.8); font-size: 0.85rem;">Guadeloupe · Martinique · Guyane · Île-de-France</span></p>
         </div>
-        <div>
-          <h4>Ressources</h4>
-          <ul>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="securite.html">Sécurité des données</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Légal</h4>
-          <ul>
-            <li><a href="mentions-legales.html">Mentions légales</a></li>
-            <li><a href="confidentialite.html">Politique de confidentialité</a></li>
-            <li><a href="cgv.html">CGV</a></li>
-          </ul>
-        </div>
+        <div><h4>Méthode</h4><a href="notre-methode.html">Comment ça marche</a><a href="accompagnement.html">Nos offres</a><a href="resultats.html">Études de cas</a><a href="faq.html">FAQ</a></div>
+        <div><h4>Société</h4><a href="qui-sommes-nous.html">Équipe</a><a href="experts-comptables.html">Experts-comptables</a><a href="contact.html">Contact</a><a href="securite.html">Sécurité</a></div>
+        <div><h4>Légal</h4><a href="mentions-legales.html">Mentions légales</a><a href="confidentialite.html">Confidentialité</a><a href="cgv.html">CGV</a></div>
       </div>
-      <div class="footer-bottom">
-        <span>Adam Boards — Tous droits réservés</span>
-        <div class="flex gap-16">
-          <a href="mentions-legales.html">Mentions légales</a>
-          <a href="confidentialite.html">Confidentialité</a>
-          <a href="cgv.html">CGV</a>
-        </div>
-      </div>
+      <div class="footer-bottom"><span>© 2025 Adam Boards. Tous droits réservés.</span><span>contact@adamboards.fr</span></div>
     </div>
   </footer>
 

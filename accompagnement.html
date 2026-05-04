@@ -3,262 +3,222 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Accompagnement — Adam Boards</title>
-  <meta name="description" content="Trois niveaux d'accompagnement pour TPE : analyse financière, actions marketing digital, dashboard temps réel. Un investissement rentable dès le premier mois.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <title>Nos offres — Méthode ADAM</title>
+  <meta name="description" content="Du diagnostic gratuit au DAF externalisé. Quatre formules adaptées à votre besoin et votre budget. Résultats mesurés sur la Méthode ADAM 90 jours.">
+  <link rel="stylesheet" href="css/design-system.css">
 </head>
 <body>
 
-  <!-- ========== HEADER ========== -->
-  <header class="header">
-    <div class="header-inner">
-      <a href="index.html" class="logo"><img src="images/logo.png" alt="Adam Boards — Analyser, Décider, Agir, Mesurer"></a>
-      <nav class="nav">
-        <a href="notre-methode.html">Notre méthode</a>
-        <a href="accompagnement.html" class="active">Accompagnement</a>
+  <header class="site-header">
+    <div class="wrap">
+      <a href="index.html" class="adam-logo"><span class="logo-mark" aria-hidden="true"></span><span class="logo-text">Adam Boards<span class="dot">.</span></span></a>
+      <nav class="site-nav">
+        <a href="notre-methode.html">Méthode</a>
+        <a href="accompagnement.html">Offres</a>
         <a href="resultats.html">Résultats</a>
-        <a href="experts-comptables.html">Experts-comptables</a>
-        <a href="qui-sommes-nous.html">Qui sommes-nous</a>
-        <a href="diagnostic-gratuit.html" class="nav-cta">Diagnostic gratuit</a>
+        <a href="qui-sommes-nous.html">Équipe</a>
+        <a href="diagnostic-gratuit.html" class="cta" style="background: var(--c-accent); color: var(--c-primary);">Diagnostic gratuit ↗</a>
       </nav>
-      <button class="menu-toggle" aria-label="Ouvrir le menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+      <button class="menu-btn" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
+    <div class="mobile-menu"><a href="notre-methode.html">Méthode</a><a href="accompagnement.html">Offres</a><a href="resultats.html">Résultats</a><a href="qui-sommes-nous.html">Équipe</a><a href="diagnostic-gratuit.html">Diagnostic gratuit</a></div>
   </header>
 
-  <!-- ========== HERO ========== -->
-  <section class="hero">
-    <div class="container">
-      <div style="max-width: 720px; margin: 0 auto; text-align: center;">
-        <h1>Investissez dans un co-pilote, pas dans un abonnement</h1>
-        <p style="max-width: 640px; margin: 0 auto 32px;">Deux experts dédiés à votre croissance. Un dashboard pour suivre les résultats. Des actions concrètes chaque mois.</p>
+  <!-- HERO -->
+  <section class="bg-dark" style="position: relative; overflow: hidden;">
+    <div class="wrap" style="padding-top: var(--s-6); padding-bottom: var(--s-6);">
+      <div class="reveal-stagger" style="max-width: 720px;">
+        <span class="eyebrow accent">Nos offres</span>
+        <h1 style="color: var(--c-bg); margin-top: var(--s-2);">Quatre formules.<br><span style="color: rgba(255,255,255,0.5);">Une seule méthode.</span></h1>
+        <p style="color: rgba(255,255,255,0.7); font-size: var(--t-lg); margin-top: var(--s-3);">
+          Du diagnostic gratuit au DAF externalisé. Vous changez d'offre quand vos besoins évoluent. <strong style="color: var(--c-accent);">Sans engagement long terme.</strong>
+        </p>
       </div>
     </div>
   </section>
 
-  <!-- ========== ROI HIGHLIGHT ========== -->
-  <section class="section-sm">
-    <div class="container">
-      <div class="roi-box" style="max-width: 720px; margin: 0 auto;">
-        <p style="font-size: 1.1rem; font-weight: 600; color: var(--navy); line-height: 1.7;">En moyenne, nos clients récupèrent <strong>3 200&euro;</strong> de créances dès le premier mois. Votre accompagnement se rembourse avant même de commencer.</p>
+  <!-- ROI / Différenciation -->
+  <section class="section">
+    <div class="wrap">
+      <div class="split-40-60" style="align-items: center;">
+        <div class="reveal">
+          <span class="eyebrow">01 / Pourquoi ADAM</span>
+          <h2 style="margin-top: var(--s-2);">Plus rentable<br>qu'un <span class="text-accent">recrutement</span>.</h2>
+        </div>
+        <div class="reveal">
+          <p style="font-size: var(--t-lg); color: var(--c-gray-500);">
+            Recruter un DAF à temps partiel coûte entre <strong style="color: var(--c-primary);">1 500 et 3 000 €/mois</strong>. La Méthode ADAM vous offre l'équivalent pour <strong style="color: var(--c-accent);">349 €/mois</strong> pendant 90 jours — avec des résultats concrets et mesurés à chaque étape.
+          </p>
+          <div style="margin-top: var(--s-3); padding: var(--s-3); background: var(--c-gray-50); border-left: 3px solid var(--c-data); border-radius: 4px;">
+            <div class="t-mono t-xs t-mute" style="text-transform: uppercase; letter-spacing: 0.1em;">ROI moyen</div>
+            <p style="margin-top: 6px; font-weight: 600;">+ <span data-count="3200" data-suffix=" €">3 200 €</span> récupérés dès le 1er mois — soit <strong class="text-data">9× le coût mensuel</strong> de la méthode.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ========== FORMULES ========== -->
-  <section class="section" id="formules">
-    <div class="container">
-      <div class="section-header">
-        <span class="badge badge-blue">Nos formules</span>
-        <h2>Un accompagnement adapté à votre ambition</h2>
-        <p>Chaque formule est conçue pour un profil précis. Lors du diagnostic gratuit, nous vous recommandons celle qui correspond à votre situation.</p>
+  <!-- 4 OFFRES -->
+  <section class="section bg-soft">
+    <div class="wrap">
+      <div class="reveal" style="margin-bottom: var(--s-5);">
+        <span class="eyebrow accent">02 / Tarifs</span>
+        <h2 style="margin-top: var(--s-2);">Choisissez votre niveau d'accompagnement.</h2>
       </div>
-      <div class="grid grid-3">
-
-        <!-- DECLIC -->
-        <div class="pricing-card">
-          <span class="badge badge-blue" style="margin-bottom: 16px;">Déclic</span>
-          <h3 style="margin-bottom: 8px;">On ouvre le capot de votre entreprise</h3>
-          <p style="font-size: 0.9rem; color: var(--gray-500); margin-bottom: 20px;">L'essentiel pour voir clair dans vos chiffres et lancer vos premières actions.</p>
-          <ul class="pricing-features">
-            <li>Analyse financière mensuelle par votre expert dédié</li>
-            <li>1 action marketing prioritaire exécutée</li>
-            <li>Dashboard temps réel</li>
-            <li>1 RDV de restitution par mois (30 min)</li>
-            <li>Rapport mensuel écrit</li>
+      <div class="grid-4 reveal-stagger">
+        <!-- Diagnostic -->
+        <div class="card" style="display: flex; flex-direction: column; gap: var(--s-2);">
+          <span class="tag tag-data">Gratuit</span>
+          <h3 style="font-size: 1.25rem;">Diagnostic Flash</h3>
+          <div class="stat stat-lg stat-data">0 €</div>
+          <p class="t-sm t-mute">Sans engagement</p>
+          <ul style="list-style: none; padding: 0; display: grid; gap: 6px; font-size: 0.9rem; flex: 1; margin: var(--s-2) 0;">
+            <li>→ 1 RDV de 30 min</li>
+            <li>→ Analyse rapide de votre FEC</li>
+            <li>→ 3 constats clés</li>
+            <li>→ Recommandations personnalisées</li>
           </ul>
-          <p style="font-size: 0.85rem; color: var(--gray-500); margin-bottom: 20px;"><strong>Pour :</strong> Dirigeant TPE, 1 structure</p>
-          <a href="diagnostic-gratuit.html" class="btn btn-primary" style="width: 100%;">Demander mon diagnostic gratuit</a>
+          <a href="diagnostic-gratuit.html" class="btn btn-primary" style="justify-content: center;">Réserver</a>
         </div>
-
-        <!-- ACCELERATEUR -->
-        <div class="pricing-card featured">
-          <span class="badge badge-gold" style="margin-bottom: 16px;">Accélérateur</span>
-          <h3 style="margin-bottom: 8px;">On pilote votre croissance</h3>
-          <p style="font-size: 0.9rem; color: var(--gray-500); margin-bottom: 20px;">Un accompagnement complet pour accélérer vos résultats et piloter plusieurs activités.</p>
-          <ul class="pricing-features">
-            <li>Tout Déclic, plus :</li>
-            <li>Analyse bi-mensuelle approfondie</li>
-            <li>3 actions marketing exécutées par mois</li>
-            <li>Vue multi-entreprises (2-3 structures)</li>
-            <li>2 RDV par mois</li>
-            <li>Accès direct par messagerie</li>
-            <li>Plan d'action trimestriel</li>
+        <!-- 90 jours (featured) -->
+        <div class="card" style="background: var(--c-primary); color: var(--c-bg); display: flex; flex-direction: column; gap: var(--s-2); transform: scale(1.04); position: relative; box-shadow: var(--shadow-lg);">
+          <span class="tag" style="background: var(--c-accent); color: var(--c-primary); border-color: var(--c-accent); align-self: flex-start;">Recommandé</span>
+          <h3 style="font-size: 1.25rem; color: var(--c-bg);">Méthode ADAM</h3>
+          <div class="stat stat-lg" style="color: var(--c-accent);">990 €</div>
+          <p class="t-sm" style="color: rgba(255,255,255,0.6);">ou 349 €/mois × 3 · <em>par société</em></p>
+          <ul style="list-style: none; padding: 0; display: grid; gap: 6px; font-size: 0.9rem; flex: 1; margin: var(--s-2) 0; color: rgba(255,255,255,0.85);">
+            <li>→ Programme complet 90 jours</li>
+            <li>→ 4 RDV stratégiques</li>
+            <li>→ Diagnostic + plan + exécution</li>
+            <li>→ Dashboard ADAM inclus</li>
+            <li>→ <strong style="color: var(--c-accent);">Résultats concrets mesurés</strong></li>
           </ul>
-          <p style="font-size: 0.85rem; color: var(--gray-500); margin-bottom: 20px;"><strong>Pour :</strong> Dirigeant ambitieux ou multi-activités</p>
-          <a href="diagnostic-gratuit.html" class="btn btn-primary" style="width: 100%;">Demander mon diagnostic gratuit</a>
+          <a href="diagnostic-gratuit.html" class="btn btn-accent" style="justify-content: center;">Commencer →</a>
         </div>
-
-        <!-- ASSOCIES -->
-        <div class="pricing-card">
-          <span class="badge badge-green" style="margin-bottom: 16px;">Associés</span>
-          <h3 style="margin-bottom: 8px;">Votre direction externalisée</h3>
-          <p style="font-size: 0.9rem; color: var(--gray-500); margin-bottom: 20px;">La puissance d'un DAF et d'un directeur marketing, sans les charges fixes.</p>
-          <ul class="pricing-features">
-            <li>Tout Accélérateur, plus :</li>
-            <li>DAF externalisé dédié</li>
-            <li>Pilotage marketing digital complet</li>
-            <li>Actions illimitées</li>
-            <li>Dashboards personnalisés</li>
-            <li>RDV hebdomadaire</li>
-            <li>Disponibilité prioritaire</li>
-            <li>Prévisionnel et aide à la décision stratégique</li>
+        <!-- Continu -->
+        <div class="card" style="display: flex; flex-direction: column; gap: var(--s-2);">
+          <span class="tag">Mensuel</span>
+          <h3 style="font-size: 1.25rem;">Accompagnement</h3>
+          <div class="stat stat-lg">199 €<span style="font-size: 0.5em; color: var(--c-gray-500);">/mois</span></div>
+          <p class="t-sm t-mute">Après les 90 jours · <em>par société</em></p>
+          <ul style="list-style: none; padding: 0; display: grid; gap: 6px; font-size: 0.9rem; flex: 1; margin: var(--s-2) 0;">
+            <li>→ Dashboard ADAM permanent</li>
+            <li>→ 1 RDV mensuel (1h max)</li>
+            <li>→ 1 à 3 actions par mois</li>
+            <li>→ Mise à jour des objectifs</li>
           </ul>
-          <p style="font-size: 0.85rem; color: var(--gray-500); margin-bottom: 20px;"><strong>Pour :</strong> Groupe 3+ entités</p>
-          <a href="diagnostic-gratuit.html" class="btn btn-primary" style="width: 100%;">Demander mon diagnostic gratuit</a>
+          <a href="contact.html" class="btn btn-ghost" style="justify-content: center;">Nous contacter</a>
         </div>
-
+        <!-- Associés -->
+        <div class="card" style="display: flex; flex-direction: column; gap: var(--s-2);">
+          <span class="tag">Premium</span>
+          <h3 style="font-size: 1.25rem;">Associés</h3>
+          <div class="stat stat-lg">499 €<span style="font-size: 0.5em; color: var(--c-gray-500);">/mois</span></div>
+          <p class="t-sm t-mute">DAF externalisé · <em>par société</em></p>
+          <ul style="list-style: none; padding: 0; display: grid; gap: 6px; font-size: 0.9rem; flex: 1; margin: var(--s-2) 0;">
+            <li>→ Tout l'accompagnement inclus</li>
+            <li>→ Exécution complète des actions</li>
+            <li>→ RDV hebdomadaire</li>
+            <li>→ Recouvrement, campagnes, CRM</li>
+          </ul>
+          <a href="contact.html" class="btn btn-ghost" style="justify-content: center;">Nous contacter</a>
+        </div>
       </div>
-      <p style="text-align: center; margin-top: 32px; color: var(--gray-500); font-size: 0.9rem;">Tarifs communiqués lors du diagnostic gratuit, en fonction de votre situation. <strong>Investissement inférieur à celui d'un DAF ou d'un commercial à mi-temps.</strong></p>
-    </div>
-  </section>
 
-  <!-- ========== COMPARISON SECTION ========== -->
-  <section class="section section-light">
-    <div class="container">
-      <div class="section-header">
-        <span class="badge badge-gold">Comparatif</span>
-        <h2>Pas un logiciel. Un investissement.</h2>
-      </div>
-      <div class="grid grid-3">
-        <div class="card" style="text-align: center;">
-          <div class="card-icon card-icon-blue" style="margin: 0 auto 16px;">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2v20M2 12h20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M17 7l-5 5-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <h3>Moins cher qu'un DAF à mi-temps</h3>
-          <p>Un DAF externalisé coûte 1 500 à 3 000&euro;/mois. Avec Adam Boards, vous avez l'expertise financière et le marketing en prime, pour une fraction du coût.</p>
+      <!-- BANDEAU GROUPES / MULTI-SOCIÉTÉS -->
+      <div class="reveal" style="margin-top: var(--s-4); padding: var(--s-3) var(--s-4); background: var(--c-gray-50); border-left: 4px solid var(--c-brand); border-radius: 6px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--s-3);">
+        <div style="flex: 1; min-width: 280px;">
+          <div class="t-mono t-xs" style="color: var(--c-brand); text-transform: uppercase; letter-spacing: 0.12em; font-weight: 600;">Groupes &amp; multi-sociétés</div>
+          <p style="margin-top: 6px; font-size: 0.95rem;">Vous dirigez <strong>2 sociétés ou plus</strong> ? Tableau de bord consolidé, pilotage cross-entités, <strong>tarif dégressif</strong> dès la 2ᵉ société.</p>
         </div>
-        <div class="card" style="text-align: center;">
-          <div class="card-icon card-icon-gold" style="margin: 0 auto 16px;">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-          </div>
-          <h3>Moins cher qu'un commercial</h3>
-          <p>Un commercial = 2 500 - 4 000&euro; charges comprises. Nous exécutons vos actions marketing sans les charges fixes.</p>
-        </div>
-        <div class="card" style="text-align: center;">
-          <div class="card-icon card-icon-green" style="margin: 0 auto 16px;">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9 11l3 3L22 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11" stroke="currentColor" stroke-width="2"/></svg>
-          </div>
-          <h3>Plus rentable qu'un consultant ponctuel</h3>
-          <p>Un audit ponctuel = 2 000 - 5 000&euro; sans suivi. Nous, on reste à vos côtés mois après mois pour garantir les résultats.</p>
-        </div>
+        <a href="contact.html" class="btn btn-primary" style="white-space: nowrap;">Demander un devis <span class="arrow">→</span></a>
       </div>
     </div>
   </section>
 
-  <!-- ========== FAQ ========== -->
-  <section class="section" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <span class="badge badge-blue">Questions fréquentes</span>
-        <h2>Vos questions, nos réponses</h2>
+  <!-- COMPARATIF COÛT -->
+  <section class="section">
+    <div class="wrap">
+      <div class="reveal" style="margin-bottom: var(--s-4);">
+        <span class="eyebrow">03 / Comparaison</span>
+        <h2 style="margin-top: var(--s-2);">Combien ça coûte… <span style="color: var(--c-gray-500);">ailleurs ?</span></h2>
       </div>
-      <div style="max-width: 720px; margin: 0 auto;">
-
-        <div class="faq-item">
-          <div class="faq-question">Pourquoi un engagement de 3 mois ?</div>
-          <div class="faq-answer">
-            Parce que les vrais résultats prennent du temps. Le premier mois, on diagnostique et on lance les premières actions. Le deuxième, on mesure les impacts. Le troisième, on ajuste et on accélère. Trois mois, c'est le minimum pour transformer durablement vos indicateurs — pas juste les améliorer temporairement.
-          </div>
+      <div class="grid-3 reveal-stagger">
+        <div class="card" style="text-align: left;">
+          <div class="t-mono t-xs t-mute">Option A</div>
+          <h3 style="font-size: 1.1rem; margin-top: var(--s-1);">DAF à temps partiel</h3>
+          <div class="stat stat-md text-warn" style="margin-top: var(--s-2);">1 500 - 3 000 €<span style="font-size: 0.5em; color: var(--c-gray-500);">/mois</span></div>
+          <p class="t-sm t-mute" style="margin-top: var(--s-2);">Pas d'exécution. Pas d'engagement sur le résultat. Pas d'outil dédié.</p>
         </div>
-
-        <div class="faq-item">
-          <div class="faq-question">Que se passe-t-il après l'engagement initial ?</div>
-          <div class="faq-answer">
-            Après la période d'engagement, l'accompagnement continue au mois le mois, sans engagement supplémentaire. Vous pouvez arrêter quand vous le souhaitez avec un préavis de 30 jours. La grande majorité de nos clients choisissent de continuer car les résultats sont là.
-          </div>
+        <div class="card" style="text-align: left;">
+          <div class="t-mono t-xs t-mute">Option B</div>
+          <h3 style="font-size: 1.1rem; margin-top: var(--s-1);">Commercial embauché</h3>
+          <div class="stat stat-md text-warn" style="margin-top: var(--s-2);">2 500 - 4 000 €<span style="font-size: 0.5em; color: var(--c-gray-500);">/mois</span></div>
+          <p class="t-sm t-mute" style="margin-top: var(--s-2);">+ charges sociales, formation, équipement, résultat incertain.</p>
         </div>
-
-        <div class="faq-item">
-          <div class="faq-question">Comment est calculé le ROI ?</div>
-          <div class="faq-answer">
-            Nous mesurons le ROI à partir de données concrètes : créances récupérées, nouveaux clients générés par nos actions marketing, économies identifiées lors de l'analyse financière. Chaque mois, votre rapport inclut un calcul clair du retour sur investissement de notre accompagnement. Pas de promesses vagues — des chiffres vérifiables.
-          </div>
+        <div class="card" style="text-align: left; border-color: var(--c-accent); background: rgba(244,204,26,0.06);">
+          <div class="t-mono t-xs" style="color: var(--c-accent); font-weight: 600;">Méthode ADAM</div>
+          <h3 style="font-size: 1.1rem; margin-top: var(--s-1);">Programme 90 jours</h3>
+          <div class="stat stat-md text-data" style="margin-top: var(--s-2);">349 €<span style="font-size: 0.5em; color: var(--c-gray-500);">/mois × 3</span></div>
+          <p class="t-sm" style="margin-top: var(--s-2); font-weight: 500;"><strong>9× moins cher.</strong> Résultats mesurés.</p>
         </div>
-
-        <div class="faq-item">
-          <div class="faq-question">Comment connaître les tarifs ?</div>
-          <div class="faq-answer">
-            Les tarifs sont communiqués lors du diagnostic gratuit, une fois que nous comprenons votre situation. Chaque entreprise est différente et nous voulons vous recommander la formule la plus adaptée — pas vous vendre un forfait générique. Ce que nous pouvons vous dire : notre accompagnement coûte moins cher qu'un DAF ou un commercial à mi-temps, et il se rembourse dès le premier mois grâce aux créances récupérées et aux actions mises en place.
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-question">Je peux changer de formule en cours de route ?</div>
-          <div class="faq-answer">
-            Oui, vous pouvez monter en gamme à tout moment. Le changement prend effet le mois suivant. Pour passer à une formule inférieure, c'est possible à la fin de votre période d'engagement en cours.
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-question">L'accompagnement est-il déductible ?</div>
-          <div class="faq-answer">
-            Oui. Nos prestations sont facturées en tant que conseil en gestion et marketing. Elles sont intégralement déductibles de votre résultat en tant que charges d'exploitation. Votre expert-comptable pourra les comptabiliser sans difficulté.
-          </div>
-        </div>
-
       </div>
     </div>
   </section>
 
-  <!-- ========== CTA SECTION ========== -->
-  <section class="cta-section">
-    <div class="container">
-      <h2>Le diagnostic est gratuit. Les résultats, eux, sont garantis.</h2>
-      <p>30 minutes pour identifier vos leviers de croissance et vos angles morts financiers. Sans engagement.</p>
-      <a href="diagnostic-gratuit.html" class="btn btn-gold btn-lg">Demander mon diagnostic gratuit</a>
+  <!-- ENGAGEMENT -->
+  <section class="section bg-dark" style="position: relative; overflow: hidden;">
+    <div class="wrap" style="position: relative;">
+      <div aria-hidden="true" style="position: absolute; top: 50%; right: -60px; transform: translateY(-50%) rotate(-6deg); font-family: var(--f-mono); font-size: clamp(8rem, 20vw, 16rem); font-weight: 700; color: rgba(244,204,26,0.06); line-height: 0.85; pointer-events: none;">+€</div>
+      <div style="max-width: 720px; position: relative;">
+        <span class="eyebrow accent">04 / Notre engagement</span>
+        <h2 style="color: var(--c-bg); margin-top: var(--s-2);">Des résultats <span class="text-accent">concrets et mesurés.</span><br>Pas des promesses.</h2>
+        <p style="color: rgba(255,255,255,0.7); font-size: var(--t-lg); margin-top: var(--s-3);">
+          Notre engagement : des résultats tangibles à 90 jours — impayés récupérés, marges améliorées, trésorerie maîtrisée. Chaque mois, vous mesurez l'impact réel de vos décisions sur votre rentabilité.
+        </p>
+      </div>
     </div>
   </section>
 
-  <!-- ========== FOOTER ========== -->
-  <footer class="footer">
-    <div class="container">
+  <!-- FAQ -->
+  <section class="section">
+    <div class="wrap">
+      <div class="reveal" style="margin-bottom: var(--s-4);">
+        <span class="eyebrow">05 / FAQ</span>
+        <h2 style="margin-top: var(--s-2);">Questions fréquentes</h2>
+      </div>
+      <div class="reveal-stagger" style="display: grid; gap: var(--s-2); max-width: 880px;">
+        <details class="card"><summary style="font-weight: 600; cursor: pointer; font-size: 1rem;">Y a-t-il un engagement de durée ?</summary><p style="margin-top: var(--s-2); color: var(--c-gray-500);">Non. Le diagnostic est gratuit. La Méthode 90 jours est un programme court sans reconduction. L'accompagnement continu (199 €/mois) est résiliable à tout moment.</p></details>
+        <details class="card"><summary style="font-weight: 600; cursor: pointer; font-size: 1rem;">Que se passe-t-il après les 90 jours ?</summary><p style="margin-top: var(--s-2); color: var(--c-gray-500);">Vous gardez l'accès à votre Tableau de Bord ADAM. Vous pouvez choisir de continuer avec l'Accompagnement (199 €/mois) ou les Associés (499 €/mois) — ou simplement repartir avec votre dashboard et vos actions exécutées.</p></details>
+        <details class="card"><summary style="font-weight: 600; cursor: pointer; font-size: 1rem;">Comment mesurez-vous les résultats ?</summary><p style="margin-top: var(--s-2); color: var(--c-gray-500);">À chaque étape, nous suivons des indicateurs précis : montant des impayés récupérés, évolution de la marge nette, économies de charges, trésorerie prévisionnelle. Vous voyez l'impact réel de chaque action sur votre Tableau de Bord ADAM.</p></details>
+        <details class="card"><summary style="font-weight: 600; cursor: pointer; font-size: 1rem;">Est-ce déductible fiscalement ?</summary><p style="margin-top: var(--s-2); color: var(--c-gray-500);">Oui. Notre prestation est une charge d'exploitation déductible (compte 622 — honoraires).</p></details>
+        <details class="card"><summary style="font-weight: 600; cursor: pointer; font-size: 1rem;">Vous remplacez mon comptable ?</summary><p style="margin-top: var(--s-2); color: var(--c-gray-500);">Non. Votre expert-comptable gère vos obligations légales. Adam Boards gère votre pilotage opérationnel. Les deux sont complémentaires, pas concurrents.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section bg-soft">
+    <div class="wrap" style="text-align: center; max-width: 700px; margin: 0 auto;">
+      <span class="eyebrow accent">Prêt ?</span>
+      <h2 style="margin-top: var(--s-2);">Commencez par le diagnostic gratuit.</h2>
+      <p style="color: var(--c-gray-500); font-size: var(--t-lg); margin-top: var(--s-2); margin-bottom: var(--s-4);">30 minutes. Sans engagement. 3 constats clés sur votre rentabilité.</p>
+      <a href="diagnostic-gratuit.html" class="btn btn-primary">Réserver mon diagnostic <span class="arrow">→</span></a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="wrap">
       <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="index.html" class="logo"><img src="images/logo.png" alt="Adam Boards"></a>
-          <p>Accompagnement financier et marketing pour les dirigeants de TPE en France. Vos chiffres, vos actions, vos résultats — en temps réel.</p>
-        </div>
         <div>
-          <h4>Méthode</h4>
-          <ul>
-            <li><a href="notre-methode.html">Notre méthode</a></li>
-            <li><a href="accompagnement.html">Accompagnement</a></li>
-            <li><a href="resultats.html">Résultats clients</a></li>
-            <li><a href="experts-comptables.html">Experts-comptables</a></li>
-          </ul>
+          <div class="adam-logo"><span class="logo-mark" aria-hidden="true"></span><span class="logo-text" style="color: var(--c-brand);">Adam Boards<span class="dot" style="color: var(--c-accent);">.</span></span></div>
+          <p style="font-size: 0.92rem; color: rgba(255,255,255,0.65); margin-top: var(--s-2); max-width: 320px;">Croquer dans la pomme de la rentabilité.<br>Analyser, Décider, Agir, Mesurer.<br><span style="color: rgba(244,204,26,0.8); font-size: 0.85rem;">Guadeloupe · Martinique · Guyane · Île-de-France</span></p>
         </div>
-        <div>
-          <h4>Ressources</h4>
-          <ul>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="securite.html">Sécurité des données</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Légal</h4>
-          <ul>
-            <li><a href="mentions-legales.html">Mentions légales</a></li>
-            <li><a href="confidentialite.html">Politique de confidentialité</a></li>
-            <li><a href="cgv.html">CGV</a></li>
-          </ul>
-        </div>
+        <div><h4>Méthode</h4><a href="notre-methode.html">Comment ça marche</a><a href="accompagnement.html">Nos offres</a><a href="resultats.html">Études de cas</a><a href="faq.html">FAQ</a></div>
+        <div><h4>Société</h4><a href="qui-sommes-nous.html">Équipe</a><a href="experts-comptables.html">Experts-comptables</a><a href="contact.html">Contact</a><a href="securite.html">Sécurité</a></div>
+        <div><h4>Légal</h4><a href="mentions-legales.html">Mentions légales</a><a href="confidentialite.html">Confidentialité</a><a href="cgv.html">CGV</a></div>
       </div>
-      <div class="footer-bottom">
-        <span>Adam Boards — Tous droits réservés</span>
-        <div class="flex gap-16">
-          <a href="mentions-legales.html">Mentions légales</a>
-          <a href="confidentialite.html">Confidentialité</a>
-          <a href="cgv.html">CGV</a>
-        </div>
-      </div>
+      <div class="footer-bottom"><span>© 2025 Adam Boards. Tous droits réservés.</span><span>contact@adamboards.fr</span></div>
     </div>
   </footer>
 

@@ -3,199 +3,135 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Diagnostic gratuit — Adam Boards</title>
-  <meta name="description" content="Envoyez votre FEC, recevez un diagnostic financier complet en 48h. Gratuit, confidentiel, sans engagement. Notre expert financier identifie vos leviers de croissance.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <title>Diagnostic financier gratuit — Méthode ADAM</title>
+  <meta name="description" content="30 minutes pour découvrir vos vrais indicateurs de rentabilité, vos angles morts et vos leviers d'action immédiats. Sans engagement.">
+  <link rel="stylesheet" href="css/design-system.css">
+  <style>
+    .form-input, .form-select, .form-textarea {
+      width: 100%;
+      padding: 14px 16px;
+      font-family: var(--f-body);
+      font-size: 0.95rem;
+      color: var(--c-primary);
+      background: var(--c-bg);
+      border: 1px solid var(--c-gray-200);
+      border-radius: 6px;
+      transition: border-color var(--t-fast) var(--ease), box-shadow var(--t-fast) var(--ease);
+    }
+    .form-input:focus, .form-select:focus, .form-textarea:focus {
+      outline: none;
+      border-color: var(--c-accent);
+      box-shadow: 0 0 0 3px rgba(244,204,26,0.15);
+    }
+    .form-label {
+      font-family: var(--f-mono);
+      font-size: 0.7rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--c-gray-500);
+      margin-bottom: 6px;
+      display: block;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- ========== HEADER ========== -->
-  <header class="header">
-    <div class="header-inner">
-      <a href="index.html" class="logo"><img src="images/logo.png" alt="Adam Boards — Analyser, Décider, Agir, Mesurer"></a>
-      <nav class="nav">
-        <a href="notre-methode.html">Notre méthode</a>
-        <a href="accompagnement.html">Accompagnement</a>
-        <a href="resultats.html">Résultats</a>
-        <a href="experts-comptables.html">Experts-comptables</a>
-        <a href="qui-sommes-nous.html">Qui sommes-nous</a>
-        <a href="diagnostic-gratuit.html" class="nav-cta active">Diagnostic gratuit</a>
-      </nav>
-      <button class="menu-toggle" aria-label="Ouvrir le menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+  <header class="site-header">
+    <div class="wrap">
+      <a href="index.html" class="adam-logo"><span class="logo-mark" aria-hidden="true"></span><span class="logo-text">Adam Boards<span class="dot">.</span></span></a>
+      <nav class="site-nav"><a href="notre-methode.html">Méthode</a><a href="accompagnement.html">Offres</a><a href="resultats.html">Résultats</a><a href="qui-sommes-nous.html">Équipe</a><a href="diagnostic-gratuit.html" class="cta" style="background: var(--c-accent); color: var(--c-primary);">Diagnostic gratuit ↗</a></nav>
+      <button class="menu-btn" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
+    <div class="mobile-menu"><a href="notre-methode.html">Méthode</a><a href="accompagnement.html">Offres</a><a href="resultats.html">Résultats</a><a href="qui-sommes-nous.html">Équipe</a><a href="diagnostic-gratuit.html">Diagnostic gratuit</a></div>
   </header>
 
-  <!-- ========== HERO ========== -->
-  <section class="hero">
-    <div class="container">
-      <div style="max-width: 720px; margin: 0 auto; text-align: center;">
-        <h1>On analyse vos données réelles. 48h plus tard, vous découvrez ce que vos chiffres cachent.</h1>
-        <p style="max-width: 620px; margin: 20px auto 32px;">Notre expert financier étudie votre FEC et identifie vos leviers de croissance. Gratuit, confidentiel, sans engagement.</p>
-        <a href="#diagnostic-form" class="btn btn-gold btn-lg">Demander mon diagnostic gratuit</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== CE QUE VOTRE DIAGNOSTIC VA REVELER ========== -->
+  <!-- HERO + FORM -->
   <section class="section">
-    <div class="container">
-      <div class="section-header">
-        <span class="badge badge-blue">Ce que votre diagnostic va révéler</span>
-        <h2>3 éclairages concrets sur votre entreprise</h2>
-      </div>
-      <div class="grid grid-3">
-        <div class="card">
-          <div class="card-icon card-icon-blue">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M3 3v18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M7 16l4-6 4 4 5-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <div class="wrap">
+      <div class="split-40-60" style="gap: var(--s-5); align-items: start;">
+        <!-- Texte gauche -->
+        <div class="reveal-stagger">
+          <span class="eyebrow accent">Diagnostic gratuit</span>
+          <h1 style="margin-top: var(--s-2);">30 minutes pour <span class="text-accent">découvrir où vous perdez de l'argent.</span></h1>
+          <p style="font-size: var(--t-lg); color: var(--c-gray-500); margin-top: var(--s-3);">
+            Un expert analyse votre FEC en avant-RDV, puis nous échangeons. À la fin : 3 constats clés sur votre rentabilité, sans bla-bla.
+          </p>
+
+          <!-- Ce que vous obtenez -->
+          <div style="margin-top: var(--s-4); display: grid; gap: var(--s-2);">
+            <div style="display: flex; gap: var(--s-2); align-items: start;">
+              <span class="stat" style="font-size: 1.4rem; color: var(--c-accent); line-height: 1; min-width: 32px;">01</span>
+              <div><h3 style="font-size: 1.1rem;">Vos vrais indicateurs de rentabilité</h3><p class="t-sm t-mute">Pas le CA. La marge nette par activité.</p></div>
+            </div>
+            <div style="display: flex; gap: var(--s-2); align-items: start;">
+              <span class="stat" style="font-size: 1.4rem; color: var(--c-brand); line-height: 1; min-width: 32px;">02</span>
+              <div><h3 style="font-size: 1.1rem;">Vos angles morts financiers</h3><p class="t-sm t-mute">Charges anormales, impayés cachés, postes à optimiser.</p></div>
+            </div>
+            <div style="display: flex; gap: var(--s-2); align-items: start;">
+              <span class="stat" style="font-size: 1.4rem; color: var(--c-data); line-height: 1; min-width: 32px;">03</span>
+              <div><h3 style="font-size: 1.1rem;">Vos leviers d'action immédiats</h3><p class="t-sm t-mute">3 actions concrètes que vous pouvez lancer la semaine prochaine.</p></div>
+            </div>
           </div>
-          <h3>Vos vrais KPIs</h3>
-          <p>Marge nette, rentabilité par client, évolution mensuelle. Les indicateurs que votre comptabilité ne vous montre pas directement.</p>
+
+          <!-- Témoignage -->
+          <blockquote style="margin-top: var(--s-4); padding: var(--s-3); background: var(--c-gray-50); border-left: 3px solid var(--c-accent);">
+            <p style="font-style: italic; font-size: 1rem;">« En 30 minutes, j'ai découvert que je perdais 800 €/mois sur un poste de dépense que je n'avais jamais questionné. »</p>
+            <div class="t-mono t-xs t-mute" style="margin-top: var(--s-1); text-transform: uppercase; letter-spacing: 0.1em;">— Sophie L., dirigeante salon de beauté</div>
+          </blockquote>
         </div>
-        <div class="card">
-          <div class="card-icon card-icon-gold">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 8v4l3 3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="4" y1="4" x2="20" y2="20" stroke="currentColor" stroke-width="2"/></svg>
+
+        <!-- Formulaire droite -->
+        <div class="reveal" style="background: var(--c-bg); border: var(--border-strong); border-radius: 12px; padding: var(--s-4); box-shadow: var(--shadow-lg); position: sticky; top: 100px;">
+          <div style="display: flex; gap: var(--s-1); margin-bottom: var(--s-3);">
+            <span class="tag tag-data">Gratuit</span>
+            <span class="tag">Sans engagement</span>
+            <span class="tag">100% confidentiel</span>
           </div>
-          <h3>Vos angles morts</h3>
-          <p>Impayés oubliés, clients non rentables, charges anormales. Tout ce qui grignote votre trésorerie sans que vous le sachiez.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon card-icon-green">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-          </div>
-          <h3>Vos leviers d'action</h3>
-          <p>Ce que votre consultant marketing peut exécuter pour vous immédiatement : relances, campagnes ciblées, actions de récupération de chiffre d'affaires.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+          <h2 style="font-size: 1.5rem;">Réservez votre créneau</h2>
+          <p class="t-sm t-mute" style="margin-top: var(--s-1); margin-bottom: var(--s-3);">Nous vous recontactons sous 24h pour fixer un RDV.</p>
 
-  <!-- ========== TESTIMONIAL + FORM ========== -->
-  <section class="section section-light" id="diagnostic-form-section">
-    <div class="container">
-
-      <!-- Micro-testimonial -->
-      <div style="max-width: 600px; margin: 0 auto 48px;">
-        <div class="testimonial">
-          <p>Avant : 3 fichiers Excel et un appel comptable. Après : 4 200 EUR de créances récupérées en 30 jours.</p>
-          <div class="testimonial-author">Dirigeant TPE, secteur BTP</div>
-        </div>
-      </div>
-
-      <!-- Form -->
-      <div style="max-width: 520px; margin: 0 auto;">
-        <div style="text-align: center; margin-bottom: 32px;">
-          <h2>Demandez votre diagnostic gratuit</h2>
-          <p class="text-muted" style="margin-top: 8px;">Remplissez le formulaire, votre expert financier vous contacte sous 24h.</p>
-        </div>
-
-        <form id="diagnostic-form" style="background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius); padding: 32px; box-shadow: var(--shadow-md);">
-          <div class="form-group">
-            <label class="form-label" for="nom">Nom complet</label>
-            <input type="text" id="nom" name="nom" class="form-input" placeholder="Prénom Nom" required>
-          </div>
-          <div class="form-group">
-            <label class="form-label" for="email">Email professionnel</label>
-            <input type="email" id="email" name="email" class="form-input" placeholder="vous@entreprise.fr" required>
-          </div>
-          <div class="form-group">
-            <label class="form-label" for="telephone">Téléphone</label>
-            <input type="tel" id="telephone" name="telephone" class="form-input" placeholder="06 00 00 00 00" required>
-          </div>
-          <div class="form-group">
-            <label class="form-label" for="nb-entreprises">Nombre d'entreprises</label>
-            <select id="nb-entreprises" name="nb-entreprises" class="form-input" required>
-              <option value="" disabled selected>Sélectionnez</option>
-              <option value="1">1</option>
-              <option value="2-3">2-3</option>
-              <option value="4+">4+</option>
-            </select>
-          </div>
-          <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">Demander mon diagnostic gratuit</button>
-        </form>
-
-        <p style="text-align: center; font-size: 0.8rem; color: var(--gray-400); margin-top: 16px;">Données hébergées en France | Confidentialité garantie | RGPD</p>
-
-        <div style="margin-top: 24px; background: var(--blue-pale); border-radius: var(--radius-sm); padding: 16px 20px; font-size: 0.9rem; color: var(--gray-700); text-align: center;">
-          <strong>Prochaine étape :</strong> Votre expert financier vous contacte sous 24h pour récupérer votre FEC et planifier votre restitution.
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ========== FAQ ========== -->
-  <section class="section">
-    <div class="container">
-      <div class="section-header">
-        <h2>Questions fréquentes</h2>
-      </div>
-      <div style="max-width: 640px; margin: 0 auto;">
-        <div class="faq-item">
-          <div class="faq-question">C'est quoi un FEC ?</div>
-          <div class="faq-answer">Le Fichier des Écritures Comptables (FEC) est un export standardisé de votre comptabilité, obligatoire en France depuis 2014. Votre expert-comptable peut vous le fournir en quelques minutes. Il contient l'ensemble de vos écritures comptables dans un format exploitable.</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-question">Mes données sont-elles en sécurité ?</div>
-          <div class="faq-answer">Vos données sont hébergées en France et traitées dans le strict respect du RGPD. Seul votre expert financier dédié accède à votre FEC pour réaliser l'analyse. Aucune donnée n'est partagée avec des tiers. Vous pouvez demander la suppression de vos fichiers à tout moment.</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-question">Combien de temps dure le diagnostic ?</div>
-          <div class="faq-answer">Votre expert financier analyse votre FEC sous 48h. Vous recevez ensuite une restitution détaillée lors d'un appel de 30 minutes où il vous présente vos KPIs, vos angles morts et vos leviers d'action concrets. L'ensemble du processus prend moins d'une semaine.</div>
+          <form id="diagnostic-form" style="display: grid; gap: var(--s-2);">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--s-2);">
+              <div><label class="form-label" for="prenom">Prénom *</label><input class="form-input" type="text" id="prenom" name="prenom" required></div>
+              <div><label class="form-label" for="nom">Nom *</label><input class="form-input" type="text" id="nom" name="nom" required></div>
+            </div>
+            <div><label class="form-label" for="email">Email *</label><input class="form-input" type="email" id="email" name="email" required></div>
+            <div><label class="form-label" for="tel">Téléphone *</label><input class="form-input" type="tel" id="tel" name="tel" required></div>
+            <div><label class="form-label" for="societe">Société *</label><input class="form-input" type="text" id="societe" name="societe" required></div>
+            <div>
+              <label class="form-label" for="ca">Chiffre d'affaires annuel</label>
+              <select class="form-select" id="ca" name="ca">
+                <option value="">— Sélectionner —</option>
+                <option value="<100k">Moins de 100 k€</option>
+                <option value="100-500k">100 - 500 k€</option>
+                <option value="500k-1M">500 k€ - 1 M€</option>
+                <option value="1-5M">1 - 5 M€</option>
+                <option value=">5M">Plus de 5 M€</option>
+              </select>
+            </div>
+            <div><label class="form-label" for="secteur">Secteur d'activité</label><input class="form-input" type="text" id="secteur" name="secteur" placeholder="Ex: BTP, Services, Restauration…"></div>
+            <div><label class="form-label" for="message">Message (optionnel)</label><textarea class="form-textarea" id="message" name="message" rows="3" placeholder="Décrivez votre besoin en quelques mots…"></textarea></div>
+            <button type="submit" class="btn btn-accent" style="margin-top: var(--s-2); justify-content: center; width: 100%;">Réserver mon diagnostic <span class="arrow">→</span></button>
+            <p class="t-xs t-mute" style="text-align: center;">En soumettant, vous acceptez notre <a href="confidentialite.html" style="text-decoration: underline;">politique de confidentialité</a>.</p>
+          </form>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ========== FOOTER ========== -->
-  <footer class="footer">
-    <div class="container">
+  <footer class="site-footer">
+    <div class="wrap">
       <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="index.html" class="logo"><img src="images/logo.png" alt="Adam Boards"></a>
-          <p>Accompagnement financier et marketing pour les dirigeants de TPE en France. Vos chiffres, vos actions, vos résultats — en temps réel.</p>
-        </div>
         <div>
-          <h4>Méthode</h4>
-          <ul>
-            <li><a href="notre-methode.html">Notre méthode</a></li>
-            <li><a href="accompagnement.html">Accompagnement</a></li>
-            <li><a href="resultats.html">Résultats clients</a></li>
-            <li><a href="experts-comptables.html">Experts-comptables</a></li>
-          </ul>
+          <div class="adam-logo"><span class="logo-mark" aria-hidden="true"></span><span class="logo-text" style="color: var(--c-brand);">Adam Boards<span class="dot" style="color: var(--c-accent);">.</span></span></div>
+          <p style="font-size: 0.92rem; color: rgba(255,255,255,0.65); margin-top: var(--s-2); max-width: 320px;">Croquer dans la pomme de la rentabilité.<br>Analyser, Décider, Agir, Mesurer.<br><span style="color: rgba(244,204,26,0.8); font-size: 0.85rem;">Guadeloupe · Martinique · Guyane · Île-de-France</span></p>
         </div>
-        <div>
-          <h4>Ressources</h4>
-          <ul>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="securite.html">Sécurité des données</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Légal</h4>
-          <ul>
-            <li><a href="mentions-legales.html">Mentions légales</a></li>
-            <li><a href="confidentialite.html">Politique de confidentialité</a></li>
-            <li><a href="cgv.html">CGV</a></li>
-          </ul>
-        </div>
+        <div><h4>Méthode</h4><a href="notre-methode.html">Comment ça marche</a><a href="accompagnement.html">Nos offres</a><a href="resultats.html">Études de cas</a><a href="faq.html">FAQ</a></div>
+        <div><h4>Société</h4><a href="qui-sommes-nous.html">Équipe</a><a href="experts-comptables.html">Experts-comptables</a><a href="contact.html">Contact</a><a href="securite.html">Sécurité</a></div>
+        <div><h4>Légal</h4><a href="mentions-legales.html">Mentions légales</a><a href="confidentialite.html">Confidentialité</a><a href="cgv.html">CGV</a></div>
       </div>
-      <div class="footer-bottom">
-        <span>Adam Boards — Tous droits réservés</span>
-        <div class="flex gap-16">
-          <a href="mentions-legales.html">Mentions légales</a>
-          <a href="confidentialite.html">Confidentialité</a>
-          <a href="cgv.html">CGV</a>
-        </div>
-      </div>
+      <div class="footer-bottom"><span>© 2025 Adam Boards. Tous droits réservés.</span><span>contact@adamboards.fr</span></div>
     </div>
   </footer>
 
