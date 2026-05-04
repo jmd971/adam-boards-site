@@ -93,26 +93,35 @@
           </div>
         </div>
 
-        <!-- FORMULAIRE GHL -->
-        <div style="background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius); padding: 16px; box-shadow: var(--shadow-md);">
-          <iframe
-            src="https://my.adamboards.fr/widget/form/RwNmaQkR32FPTvk8Ud1j"
-            style="width: 100%; min-height: 600px; border: none; border-radius: 4px; display: block;"
-            id="inline-RwNmaQkR32FPTvk8Ud1j"
-            data-layout='{"id":"INLINE"}'
-            data-trigger-type="alwaysShow"
-            data-trigger-value=""
-            data-activation-type="alwaysActivated"
-            data-activation-value=""
-            data-deactivation-type="neverDeactivate"
-            data-deactivation-value=""
-            data-form-name="Formulaire de contact"
-            data-height="600"
-            data-layout-iframe-id="inline-RwNmaQkR32FPTvk8Ud1j"
-            data-form-id="RwNmaQkR32FPTvk8Ud1j"
-            title="Formulaire de contact">
-          </iframe>
-          <script src="https://my.adamboards.fr/js/form_embed.js"></script>
+        <!-- FORMULAIRE -->
+        <div>
+          <form id="contact-form" style="background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius); padding: 32px; box-shadow: var(--shadow-md);">
+            <h3 style="margin-bottom: 24px;">Envoyez-nous un message</h3>
+            <div class="form-group">
+              <label class="form-label" for="nom">Nom complet</label>
+              <input type="text" id="nom" name="nom" class="form-input" placeholder="Prénom Nom" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">Email</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="vous@entreprise.fr" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="sujet">Sujet</label>
+              <select id="sujet" name="sujet" class="form-input" required>
+                <option value="" disabled selected>Sélectionnez</option>
+                <option value="question">Question générale</option>
+                <option value="diagnostic">Diagnostic gratuit</option>
+                <option value="partenariat">Partenariat experts-comptables</option>
+                <option value="client">Je suis déjà client</option>
+                <option value="autre">Autre</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="message">Message</label>
+              <textarea id="message" name="message" class="form-input" placeholder="Décrivez votre situation ou votre question..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">Envoyer le message</button>
+          </form>
         </div>
 
       </div>
