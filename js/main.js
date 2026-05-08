@@ -37,40 +37,6 @@ if ('IntersectionObserver' in window && reveals.length) {
   reveals.forEach((el) => el.classList.add('in'));
 }
 
-// ── Number counting animation ─────────────────────────────
-const counters = document.querySelectorAll('[data-count]');
-if ('IntersectionObserver' in window && counters.length) {
-  const fmt = (v, decimals) => {
-    const n = decimals ? v.toFixed(decimals) : Math.round(v);
-    return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, '\u202f');
-  };
-  const animate = (el) => {
-    const target = parseFloat(el.dataset.count);
-    const decimals = parseInt(el.dataset.decimals || '0', 10);
-    const prefix = el.dataset.prefix || '';
-    const suffix = el.dataset.suffix || '';
-    const duration = parseInt(el.dataset.duration || '1400', 10);
-    const start = performance.now();
-    const ease = (t) => 1 - Math.pow(1 - t, 3);
-    const tick = (now) => {
-      const p = Math.min((now - start) / duration, 1);
-      const v = target * ease(p);
-      el.textContent = `${prefix}${fmt(v, decimals)}${suffix}`;
-      if (p < 1) requestAnimationFrame(tick);
-    };
-    requestAnimationFrame(tick);
-  };
-  const ioCount = new IntersectionObserver((entries) => {
-    entries.forEach((e) => {
-      if (e.isIntersecting) {
-        animate(e.target);
-        ioCount.unobserve(e.target);
-      }
-    });
-  }, { threshold: 0.4 });
-  counters.forEach((el) => ioCount.observe(el));
-}
-
 // ── Smooth anchor scrolling ───────────────────────────────
 document.querySelectorAll('a[href^="#"]').forEach((a) => {
   a.addEventListener('click', (e) => {
