@@ -7,6 +7,10 @@
   <meta name="description" content="En 90 jours, vous savez exactement où va votre argent et comment en garder plus. La Méthode ADAM : diagnostic, plan d'action, exécution. Résultats concrets mesurés.">
   <link rel="stylesheet" href="css/design-system.css">
   <link rel="preload" as="image" href="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?w=1200&auto=format&fit=crop&q=80">
+  <style>
+    .home-doors { grid-template-columns: 1fr; }
+    @media (min-width: 820px) { .home-doors { grid-template-columns: 1fr 1fr; } }
+  </style>
 </head>
 <body>
 
@@ -323,61 +327,62 @@
     <div class="wrap">
       <div class="split-60-40" style="align-items: end; margin-bottom: var(--s-5);">
         <div class="reveal">
-          <span class="eyebrow accent">04 / Tarifs</span>
+          <span class="eyebrow accent">04 / Offres</span>
           <h2 style="margin-top: var(--s-2);">
-            Quatre formules.<br>
+            Deux façons d'avancer.<br>
             <span style="color: var(--c-gray-500);">Une seule méthode.</span>
           </h2>
         </div>
         <div class="reveal">
           <p class="t-mute" style="font-size: var(--t-lg);">
-            Quatre formules de 39 à 199 € HT/mois. Mensuel sans engagement — annuel : 2 mois offerts.
+            Pilotez seul avec l'application, ou faites-vous accompagner sur 90 jours. Puis gardez le cap dans la durée.
           </p>
         </div>
       </div>
 
-      <!-- OFFRE PRINCIPALE — mise en avant -->
-      <div class="reveal" style="margin-bottom: var(--s-4);">
-        <div class="card split-60-40" style="background: var(--c-primary); color: var(--c-bg); padding: var(--s-4); align-items: center; box-shadow: var(--shadow-lg); position: relative; overflow: hidden;">
+      <!-- LES DEUX PORTES (2 cartes) -->
+      <div class="reveal-stagger home-doors" style="display: grid; gap: var(--s-3); margin-bottom: var(--s-4);">
+        <!-- PORTE 1 -->
+        <div class="card" style="display: flex; flex-direction: column; gap: 8px; position: relative; overflow: hidden;">
+          <span class="tag tag-data" style="align-self: flex-start;">Piloter seul</span>
+          <h3 style="font-size: 1.4rem; margin-top: 4px;">Adam Boards Autonome</h3>
+          <div class="stat" style="font-size: 2.2rem; color: var(--c-data); margin-top: 4px;">49 €<span style="font-size: 0.4em; color: var(--c-gray-500); font-weight: 500;">/mois HT</span></div>
+          <p class="t-sm t-mute" style="flex: 1; margin: var(--s-1) 0;">L'application complète pour suivre vos chiffres en autonomie : tableaux de bord, trésorerie, créances, budget, alertes et copilote IA.</p>
+          <a href="accompagnement.html" class="btn btn-primary" style="justify-content: center;">Découvrir l'offre →</a>
+        </div>
+        <!-- PORTE 2 (dark, featured) -->
+        <div class="card" style="display: flex; flex-direction: column; gap: 8px; background: var(--c-primary); color: var(--c-bg); box-shadow: var(--shadow-lg); position: relative; overflow: hidden;">
           <div aria-hidden="true" style="position: absolute; top: -40px; right: -40px; width: 220px; height: 220px; background: radial-gradient(circle, rgba(244,204,26,0.18), transparent 70%); pointer-events: none;"></div>
-          <div style="position: relative;">
-            <span class="tag" style="background: var(--c-accent); color: var(--c-primary); border-color: var(--c-accent);">Recommandé</span>
-            <h3 style="font-size: clamp(1.6rem, 5.5vw, 2.1rem); color: var(--c-bg); margin-top: var(--s-2); line-height: 1.1;">ADAM Pilotage+</h3>
-            <p style="color: rgba(255,255,255,0.75); margin-top: var(--s-2); font-size: 1rem; max-width: 480px;">
-              Pilotage actif accompagné : rapport mensuel N vs N-1 vs Budget, 2 actions marketing par mois, analyse de l'historique des ventes. Tout ADAM Business inclus.
-            </p>
-          </div>
-          <div style="position: relative;">
-            <div style="font-family: var(--f-mono); font-size: 0.7rem; color: rgba(255,255,255,0.5); text-transform: uppercase; letter-spacing: 0.12em;">Formule premium</div>
-            <div class="stat" style="color: var(--c-accent); font-size: clamp(2.2rem, 7vw, 3.2rem); font-weight: 700; line-height: 1; margin-top: 4px;">199 €<span style="font-size: 0.4em; color: rgba(255,255,255,0.55); font-weight: 500;">/mois HT</span></div>
-            <div style="color: rgba(255,255,255,0.6); font-size: 0.85rem; margin-top: 6px;">Engagement annuel : 2 mois offerts</div>
-            <a href="diagnostic-gratuit.html" class="btn btn-accent" style="margin-top: var(--s-3); justify-content: center; display: inline-flex;">Commencer →</a>
-          </div>
+          <span class="tag" style="align-self: flex-start; background: var(--c-accent); color: var(--c-primary); border-color: var(--c-accent);">Être accompagné</span>
+          <h3 style="font-size: 1.4rem; margin-top: 4px; color: var(--c-bg);">Cap Pilotage — 90 jours</h3>
+          <div class="stat" style="font-size: 2.2rem; color: var(--c-accent); margin-top: 4px;">990 €<span style="font-size: 0.34em; color: rgba(255,255,255,0.55); font-weight: 500;"> ou 3×350 €</span></div>
+          <p class="t-sm" style="flex: 1; margin: var(--s-1) 0; color: rgba(255,255,255,0.75);">Le parcours accompagné qui structure votre pilotage — objectifs, budget, priorités, rituel mensuel — puis vous rend autonome.</p>
+          <a href="accompagnement.html" class="btn btn-accent" style="justify-content: center;">Découvrir le programme →</a>
         </div>
       </div>
 
-      <!-- AUTRES OFFRES — secondaires -->
-      <div class="t-mono t-xs t-mute" style="text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: var(--s-2);">Les formules d'abonnement · 0,35 € HT/facture au-delà du forfait · Budget par import FEC dès 390 € HT</div>
+      <!-- POUR ALLER PLUS LOIN -->
+      <div class="t-mono t-xs t-mute" style="text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: var(--s-2);">Pour aller plus loin · dans la durée</div>
       <div class="grid-3 reveal-stagger">
-        <div class="card" style="background: var(--c-bg); padding: var(--s-3); display: flex; flex-direction: column; gap: 8px; opacity: 0.92;">
-          <span class="tag tag-data" style="font-size: 0.7rem;">Essentiel</span>
-          <h4 style="font-size: 1rem; margin: 0;">ADAM Solo</h4>
-          <div style="font-size: 1.4rem; font-weight: 700; color: var(--c-data);">39 €<span style="font-size: 0.65rem; color: var(--c-gray-500); font-weight: 500;">/mois HT</span></div>
-          <p class="t-sm t-mute" style="font-size: 0.85rem; flex: 1; margin: 0;">50 factures/mois · Saisie OCR, Équilibre, Trésorerie</p>
-          <a href="accompagnement.html" style="font-size: 0.9rem; color: var(--c-primary); font-weight: 500; text-decoration: none;">Détails →</a>
-        </div>
-        <div class="card" style="background: var(--c-bg); padding: var(--s-3); display: flex; flex-direction: column; gap: 8px; opacity: 0.92;">
-          <span class="tag" style="font-size: 0.7rem;">Populaire</span>
-          <h4 style="font-size: 1rem; margin: 0;">ADAM Pro</h4>
-          <div style="font-size: 1.4rem; font-weight: 700;">69 €<span style="font-size: 0.65rem; color: var(--c-gray-500); font-weight: 500;">/mois HT</span></div>
-          <p class="t-sm t-mute" style="font-size: 0.85rem; flex: 1; margin: 0;">120 factures/mois · + Ventes &amp; Clients, historique</p>
+        <div class="card" style="background: var(--c-bg); padding: var(--s-3); display: flex; flex-direction: column; gap: 8px;">
+          <span class="tag tag-accent" style="font-size: 0.7rem;">Récurrent</span>
+          <h4 style="font-size: 1rem; margin: 0;">Adam Boards Pilotage</h4>
+          <div style="font-size: 1.4rem; font-weight: 700;">149 €<span style="font-size: 0.65rem; color: var(--c-gray-500); font-weight: 500;">/mois HT</span></div>
+          <p class="t-sm t-mute" style="font-size: 0.85rem; flex: 1; margin: 0;">Garder le rythme : rapport mensuel, 3 priorités, alertes, revue trimestrielle</p>
           <a href="accompagnement.html" style="font-size: 0.9rem; color: var(--c-primary); font-weight: 500; text-decoration: none;">En savoir plus →</a>
         </div>
-        <div class="card" style="background: var(--c-bg); padding: var(--s-3); display: flex; flex-direction: column; gap: 8px; opacity: 0.92;">
-          <span class="tag" style="font-size: 0.7rem;">Avancé</span>
-          <h4 style="font-size: 1rem; margin: 0;">ADAM Business</h4>
-          <div style="font-size: 1.4rem; font-weight: 700;">99 €<span style="font-size: 0.65rem; color: var(--c-gray-500); font-weight: 500;">/mois HT</span></div>
-          <p class="t-sm t-mute" style="font-size: 0.85rem; flex: 1; margin: 0;">250 factures/mois · + Alertes et notifications</p>
+        <div class="card" style="background: var(--c-bg); padding: var(--s-3); display: flex; flex-direction: column; gap: 8px;">
+          <span class="tag" style="font-size: 0.7rem;">Premium</span>
+          <h4 style="font-size: 1rem; margin: 0;">Adam Boards Direction</h4>
+          <div style="font-size: 1.4rem; font-weight: 700;">dès 690 €<span style="font-size: 0.65rem; color: var(--c-gray-500); font-weight: 500;">/mois HT</span></div>
+          <p class="t-sm t-mute" style="font-size: 0.85rem; flex: 1; margin: 0;">Multi-sociétés : consolidation, RDV mensuel, scénarios, coordination conseils</p>
+          <a href="accompagnement.html" style="font-size: 0.9rem; color: var(--c-primary); font-weight: 500; text-decoration: none;">En savoir plus →</a>
+        </div>
+        <div class="card" style="background: var(--c-bg); padding: var(--s-3); display: flex; flex-direction: column; gap: 8px;">
+          <span class="tag tag-data" style="font-size: 0.7rem;">En option</span>
+          <h4 style="font-size: 1rem; margin: 0;">Option Croissance</h4>
+          <div style="font-size: 1.4rem; font-weight: 700; color: var(--c-data);">+ 99 €<span style="font-size: 0.65rem; color: var(--c-gray-500); font-weight: 500;">/mois HT</span></div>
+          <p class="t-sm t-mute" style="font-size: 0.85rem; flex: 1; margin: 0;">Levier commercial : segmentation RFM, réactivation, campagnes</p>
           <a href="accompagnement.html" style="font-size: 0.9rem; color: var(--c-primary); font-weight: 500; text-decoration: none;">En savoir plus →</a>
         </div>
       </div>
