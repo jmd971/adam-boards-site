@@ -3,184 +3,146 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog — Adam Boards | Pilotage financier et marketing pour TPE</title>
-  <meta name="description" content="Articles, guides et ressources pour les dirigeants de TPE : pilotage financier, gestion de trésorerie, relance d'impayés, marketing pour petites entreprises.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <title>Blog — Piloter sa TPE sans DAF | Adam Boards</title>
+  <meta name="description" content="Guides pratiques pour dirigeants de TPE et PME de 1 à 50 salariés : pilotage financier, marge, trésorerie, impayés. Écrits pour ceux qui n'ont pas de DAF.">
+  <link rel="canonical" href="https://adamboards.fr/blog.html">
+  <link rel="stylesheet" href="css/design-system.css">
 </head>
 <body>
 
-  <!-- ========== HEADER ========== -->
-  <header class="header">
-    <div class="header-inner">
-      <a href="index.html" class="logo"><img src="images/logo.png" alt="Adam Boards — Analyser, Décider, Agir, Mesurer"></a>
-      <nav class="nav">
-        <a href="notre-methode.html">Notre méthode</a>
-        <a href="accompagnement.html">Accompagnement</a>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="wrap">
+      <a href="index.html" class="adam-logo" aria-label="Adam Boards">
+        <span class="logo-mark" aria-hidden="true"></span>
+        <span class="logo-text">Adam Boards<span class="dot">.</span></span>
+      </a>
+      <nav class="site-nav">
+        <a href="notre-methode.html">Méthode</a>
+        <a href="accompagnement.html">Offres</a>
         <a href="resultats.html">Résultats</a>
-        <a href="experts-comptables.html">Experts-comptables</a>
-        <a href="qui-sommes-nous.html">Qui sommes-nous</a>
-        <a href="diagnostic-gratuit.html" class="nav-cta">Diagnostic gratuit</a>
+        <a href="qui-sommes-nous.html">Équipe</a>
+        <a href="diagnostic-gratuit.html" class="cta" style="background: var(--c-accent); color: var(--c-primary);">Diagnostic gratuit ↗</a>
       </nav>
-      <button class="menu-toggle" aria-label="Ouvrir le menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+      <button class="menu-btn" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+    <div class="mobile-menu">
+      <a href="notre-methode.html">Méthode</a>
+      <a href="accompagnement.html">Offres</a>
+      <a href="resultats.html">Résultats</a>
+      <a href="qui-sommes-nous.html">Équipe</a>
+      <a href="diagnostic-gratuit.html">Diagnostic gratuit</a>
     </div>
   </header>
 
-  <!-- ========== HERO ========== -->
-  <section class="hero">
-    <div class="container">
-      <div style="max-width: 720px; margin: 0 auto; text-align: center;">
-        <h1>Ressources pour dirigeants de TPE</h1>
-        <p style="max-width: 600px; margin: 0 auto;">Guides pratiques, analyses et conseils pour piloter votre entreprise avec les bons chiffres.</p>
+  <!-- HERO -->
+  <section class="bg-dark" style="position: relative; overflow: hidden;">
+    <div class="wrap" style="padding-top: var(--s-6); padding-bottom: var(--s-6); position: relative;">
+      <div aria-hidden="true" style="position: absolute; top: 50%; right: -40px; transform: translateY(-50%) rotate(-6deg); font-family: var(--f-mono); font-size: clamp(7rem, 16vw, 14rem); font-weight: 700; color: rgba(255,255,255,0.04); line-height: 0.85; pointer-events: none; user-select: none; letter-spacing: -0.05em;">Blog</div>
+      <div style="position: relative; max-width: 720px;" class="reveal-stagger">
+        <span class="eyebrow accent">Ressources</span>
+        <h1 style="color: var(--c-bg); margin-top: var(--s-2);">Piloter sa TPE <span style="color: var(--c-accent);">sans DAF</span></h1>
+        <p style="color: rgba(255,255,255,0.75); font-size: var(--t-lg); margin-top: var(--s-3); max-width: 560px;">
+          Guides pratiques pour dirigeants de 1 à 50 salariés : marge, trésorerie, indicateurs. Sans jargon de directeur financier — avec des exemples de vraies petites entreprises.
+        </p>
       </div>
     </div>
   </section>
 
-  <!-- ========== ARTICLES ========== -->
+  <!-- GUIDE PILIER -->
   <section class="section">
-    <div class="container">
-      <div class="grid grid-3">
-
-        <!-- Article 1 -->
-        <article class="card" style="cursor: pointer;">
-          <div style="background: var(--blue-pale); border-radius: var(--radius-sm); padding: 40px 20px; text-align: center; margin: -32px -32px 24px; border-radius: var(--radius) var(--radius) 0 0;">
-            <span style="font-size: 2.5rem;">
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none"><path d="M3 3v18h18" stroke="#2563EB" stroke-width="2" stroke-linecap="round"/><path d="M7 16l4-6 4 4 5-8" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </span>
+    <div class="wrap">
+      <div class="reveal" style="margin-bottom: var(--s-4);">
+        <span class="eyebrow">Le guide de référence</span>
+      </div>
+      <a href="blog/pilotage-financier-tpe.html" class="reveal" style="display: block; text-decoration: none; color: inherit;">
+        <article class="card card-tilt" style="border-left: 4px solid var(--c-accent); padding: var(--s-4);">
+          <div class="split-60-40" style="gap: var(--s-4); align-items: center;">
+            <div>
+              <span class="tag tag-accent">Guide complet</span>
+              <h2 style="margin-top: var(--s-2); font-size: clamp(1.4rem, 3vw, 2rem);">Pilotage financier d'une TPE : le guide du dirigeant sans DAF</h2>
+              <p class="t-mute" style="margin-top: var(--s-2); font-size: var(--t-lg);">
+                67&nbsp;% des dirigeants de TPE pilotent au relevé bancaire. Ce guide pose les bases : ce que « piloter » veut dire, les 5 indicateurs à suivre chaque mois, les outils selon votre budget, et la méthode pour reprendre le contrôle en 90 jours.
+              </p>
+              <span style="display: inline-block; margin-top: var(--s-3); color: var(--c-brand); font-weight: 600;">Lire le guide →</span>
+            </div>
+            <div class="t-mono t-xs t-mute" style="text-align: right;">
+              <div>📖 12 min de lecture</div>
+              <div style="margin-top: 6px;">Mis à jour le 15 juillet 2026</div>
+            </div>
           </div>
-          <span class="badge badge-blue" style="margin-bottom: 8px;">Pilotage</span>
-          <h3 style="font-size: 1.1rem;">5 KPIs que tout dirigeant de TPE devrait suivre chaque mois</h3>
-          <p style="margin-top: 8px;">Votre comptable vous donne un bilan annuel. Mais entre-temps, quels indicateurs surveiller pour piloter au quotidien ?</p>
-          <p style="margin-top: 16px; font-size: 0.8rem; color: var(--gray-400);">8 min de lecture</p>
         </article>
+      </a>
+    </div>
+  </section>
 
-        <!-- Article 2 -->
-        <article class="card" style="cursor: pointer;">
-          <div style="background: var(--gold-light); border-radius: var(--radius-sm); padding: 40px 20px; text-align: center; margin: -32px -32px 24px; border-radius: var(--radius) var(--radius) 0 0;">
-            <span style="font-size: 2.5rem;">
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 100 7h5a3.5 3.5 0 110 7H6" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </span>
-          </div>
-          <span class="badge badge-gold" style="margin-bottom: 8px;">Trésorerie</span>
-          <h3 style="font-size: 1.1rem;">Impayés en TPE : comment récupérer ce qu'on vous doit (sans ruiner la relation client)</h3>
-          <p style="margin-top: 8px;">4 200&euro; en moyenne dorment dans les créances des TPE. Voici comment les récupérer méthodiquement.</p>
-          <p style="margin-top: 16px; font-size: 0.8rem; color: var(--gray-400);">6 min de lecture</p>
-        </article>
+  <!-- ARTICLES -->
+  <section class="section bg-soft" style="padding-top: var(--s-5);">
+    <div class="wrap">
+      <div class="reveal" style="margin-bottom: var(--s-4);">
+        <span class="eyebrow">Derniers articles</span>
+      </div>
+      <div class="grid-3 reveal-stagger">
 
-        <!-- Article 3 -->
-        <article class="card" style="cursor: pointer;">
-          <div style="background: var(--green-light); border-radius: var(--radius-sm); padding: 40px 20px; text-align: center; margin: -32px -32px 24px; border-radius: var(--radius) var(--radius) 0 0;">
-            <span style="font-size: 2.5rem;">
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke="#10B981" stroke-width="2" stroke-linecap="round"/><circle cx="9" cy="7" r="4" stroke="#10B981" stroke-width="2"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="#10B981" stroke-width="2" stroke-linecap="round"/></svg>
-            </span>
-          </div>
-          <span class="badge badge-green" style="margin-bottom: 8px;">Marketing</span>
-          <h3 style="font-size: 1.1rem;">L'analyse 20/80 appliquée à votre portefeuille clients</h3>
-          <p style="margin-top: 8px;">20% de vos clients génèrent 80% de votre CA. Savez-vous lesquels ? Et que faites-vous pour les garder ?</p>
-          <p style="margin-top: 16px; font-size: 0.8rem; color: var(--gray-400);">5 min de lecture</p>
-        </article>
+        <a href="blog/combien-coute-un-daf-externalise.html" style="display: block; text-decoration: none; color: inherit;">
+          <article class="card card-tilt" style="height: 100%;">
+            <span class="tag">Pilotage</span>
+            <h3 style="font-size: 1.15rem; margin-top: var(--s-2);">Combien coûte un DAF externalisé en 2026 ? (et que faire si c'est trop cher)</h3>
+            <p class="t-sm t-mute" style="margin-top: var(--s-1);">700 à 1&nbsp;500&nbsp;€ par jour, 2&nbsp;000 à 6&nbsp;000&nbsp;€ par mois : les vrais tarifs — et les alternatives quand on dirige une entreprise de 1 à 50 salariés.</p>
+            <p class="t-mono t-xs t-mute" style="margin-top: var(--s-2);">7 min · 15 juillet 2026</p>
+          </article>
+        </a>
 
-        <!-- Article 4 -->
-        <article class="card" style="cursor: pointer;">
-          <div style="background: var(--blue-pale); border-radius: var(--radius-sm); padding: 40px 20px; text-align: center; margin: -32px -32px 24px; border-radius: var(--radius) var(--radius) 0 0;">
-            <span style="font-size: 2.5rem;">
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none"><rect x="2" y="3" width="20" height="18" rx="2" stroke="#2563EB" stroke-width="2"/><path d="M2 9h20M8 9v12" stroke="#2563EB" stroke-width="2"/></svg>
-            </span>
-          </div>
-          <span class="badge badge-blue" style="margin-bottom: 8px;">Pilotage</span>
-          <h3 style="font-size: 1.1rem;">C'est quoi un FEC et pourquoi c'est votre meilleur outil de pilotage</h3>
-          <p style="margin-top: 8px;">Le Fichier des Écritures Comptables contient tout ce dont vous avez besoin pour piloter. Encore faut-il savoir le lire.</p>
-          <p style="margin-top: 16px; font-size: 0.8rem; color: var(--gray-400);">7 min de lecture</p>
-        </article>
+        <a href="blog/daf-externalise-expert-comptable-ou-logiciel.html" style="display: block; text-decoration: none; color: inherit;">
+          <article class="card card-tilt" style="height: 100%;">
+            <span class="tag">Pilotage</span>
+            <h3 style="font-size: 1.15rem; margin-top: var(--s-2);">DAF externalisé, expert-comptable ou logiciel : qui pour piloter vos finances ?</h3>
+            <p class="t-sm t-mute" style="margin-top: var(--s-1);">Trois rôles différents que beaucoup de dirigeants confondent. Comment ils se complètent — et ce qui vous manque vraiment, selon votre taille.</p>
+            <p class="t-mono t-xs t-mute" style="margin-top: var(--s-2);">6 min · 15 juillet 2026</p>
+          </article>
+        </a>
 
-        <!-- Article 5 -->
-        <article class="card" style="cursor: pointer;">
-          <div style="background: var(--gold-light); border-radius: var(--radius-sm); padding: 40px 20px; text-align: center; margin: -32px -32px 24px; border-radius: var(--radius) var(--radius) 0 0;">
-            <span style="font-size: 2.5rem;">
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#F59E0B" stroke-width="2"/><path d="M12 8v4l3 3" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/></svg>
-            </span>
-          </div>
-          <span class="badge badge-gold" style="margin-bottom: 8px;">Trésorerie</span>
-          <h3 style="font-size: 1.1rem;">Trésorerie tendue : les 3 réflexes à avoir avant que ça devienne critique</h3>
-          <p style="margin-top: 8px;">La trésorerie, c'est l'oxygène de votre entreprise. Voici comment éviter l'asphyxie avant qu'il ne soit trop tard.</p>
-          <p style="margin-top: 16px; font-size: 0.8rem; color: var(--gray-400);">6 min de lecture</p>
-        </article>
-
-        <!-- Article 6 -->
-        <article class="card" style="cursor: pointer;">
-          <div style="background: var(--green-light); border-radius: var(--radius-sm); padding: 40px 20px; text-align: center; margin: -32px -32px 24px; border-radius: var(--radius) var(--radius) 0 0;">
-            <span style="font-size: 2.5rem;">
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="#10B981" stroke-width="2" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </span>
-          </div>
-          <span class="badge badge-green" style="margin-bottom: 8px;">Marketing</span>
-          <h3 style="font-size: 1.1rem;">Artisan BTP : comment calculer votre marge réelle par chantier</h3>
-          <p style="margin-top: 8px;">Beaucoup d'artisans pensent gagner de l'argent sur chaque chantier. L'analyse financière raconte souvent une autre histoire.</p>
-          <p style="margin-top: 16px; font-size: 0.8rem; color: var(--gray-400);">7 min de lecture</p>
+        <article class="card" style="height: 100%; opacity: 0.65; border-style: dashed;">
+          <span class="tag">À venir</span>
+          <h3 style="font-size: 1.15rem; margin-top: var(--s-2);">Les 5 indicateurs à suivre chaque mois quand on n'a pas de DAF</h3>
+          <p class="t-sm t-mute" style="margin-top: var(--s-1);">Trésorerie à 30 jours, marge par activité, impayés en cours… le tableau de bord minimal du dirigeant de TPE.</p>
+          <p class="t-mono t-xs t-mute" style="margin-top: var(--s-2);">Publication prochaine</p>
         </article>
 
       </div>
     </div>
   </section>
 
-  <!-- ========== CTA SECTION ========== -->
-  <section class="cta-section">
-    <div class="container">
-      <h2>Passez de la lecture à l'action</h2>
-      <p>Un diagnostic gratuit pour identifier vos leviers de croissance concrets.</p>
-      <a href="diagnostic-gratuit.html" class="btn btn-gold btn-lg">Demander mon diagnostic gratuit</a>
+  <!-- CTA -->
+  <section class="section bg-dark" style="position: relative; overflow: hidden;">
+    <div class="wrap" style="position: relative;">
+      <div style="max-width: 720px;">
+        <span class="eyebrow accent">Passer à l'action</span>
+        <h2 style="color: var(--c-bg); margin-top: var(--s-2);">Lire, c'est bien. <span class="text-accent">Voir vos chiffres</span>, c'est mieux.</h2>
+        <p style="color: rgba(255,255,255,0.7); font-size: var(--t-lg); margin-top: var(--s-3); margin-bottom: var(--s-4);">
+          Le diagnostic gratuit applique ce que vous lisez ici à votre propre entreprise : vos marges, vos impayés, vos postes de dépenses — en moins de 48h.
+        </p>
+        <a href="diagnostic-gratuit.html" class="btn btn-accent">Réserver mon diagnostic <span class="arrow">→</span></a>
+      </div>
     </div>
   </section>
 
-  <!-- ========== FOOTER ========== -->
-  <footer class="footer">
-    <div class="container">
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="wrap">
       <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="index.html" class="logo"><img src="images/logo.png" alt="Adam Boards"></a>
-          <p>Accompagnement financier et marketing pour les dirigeants de TPE en France. Vos chiffres, vos actions, vos résultats — en temps réel.</p>
-        </div>
         <div>
-          <h4>Méthode</h4>
-          <ul>
-            <li><a href="notre-methode.html">Notre méthode</a></li>
-            <li><a href="accompagnement.html">Accompagnement</a></li>
-            <li><a href="resultats.html">Résultats clients</a></li>
-            <li><a href="experts-comptables.html">Experts-comptables</a></li>
-          </ul>
+          <div class="adam-logo">
+            <span class="logo-mark" aria-hidden="true"></span>
+            <span class="logo-text" style="color: var(--c-brand);">Adam Boards<span class="dot" style="color: var(--c-accent);">.</span></span>
+          </div>
+          <p style="font-size: 0.92rem; color: rgba(255,255,255,0.65); margin-top: var(--s-2); max-width: 320px;">Croquer dans la pomme de la rentabilité.<br>Analyser, Décider, Agir, Mesurer.<br><span style="color: rgba(244,204,26,0.8); font-size: 0.85rem;">Guadeloupe · Martinique · Guyane · Île-de-France</span></p>
         </div>
-        <div>
-          <h4>Ressources</h4>
-          <ul>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="securite.html">Sécurité des données</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Légal</h4>
-          <ul>
-            <li><a href="mentions-legales.html">Mentions légales</a></li>
-            <li><a href="confidentialite.html">Politique de confidentialité</a></li>
-            <li><a href="cgv.html">CGV</a></li>
-          </ul>
-        </div>
+        <div><h4>Méthode</h4><a href="notre-methode.html">Comment ça marche</a><a href="accompagnement.html">Nos offres</a><a href="resultats.html">Études de cas</a><a href="faq.html">FAQ</a><a href="blog.html">Blog</a></div>
+        <div><h4>Société</h4><a href="qui-sommes-nous.html">Équipe</a><a href="experts-comptables.html">Experts-comptables</a><a href="contact.html">Contact</a><a href="securite.html">Sécurité</a></div>
+        <div><h4>Légal</h4><a href="mentions-legales.html">Mentions légales</a><a href="confidentialite.html">Confidentialité</a><a href="cgv.html">CGV</a></div>
       </div>
-      <div class="footer-bottom">
-        <span>Adam Boards — Tous droits réservés</span>
-        <div class="flex gap-16">
-          <a href="mentions-legales.html">Mentions légales</a>
-          <a href="confidentialite.html">Confidentialité</a>
-          <a href="cgv.html">CGV</a>
-        </div>
-      </div>
+      <div class="footer-bottom"><span>© 2026 Adam Boards. Tous droits réservés.</span><span>contact@adamboards.fr</span></div>
     </div>
   </footer>
 
