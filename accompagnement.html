@@ -3,9 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nos offres — ADAM BOARDS</title>
-  <meta name="description" content="Quatre formules d'abonnement de 39 à 199 € HT/mois. Mensuel sans engagement, annuel avec 2 mois offerts. Création de budget par import FEC dès 390 €.">
+  <title>Nos offres — Adam Boards</title>
+  <meta name="description" content="Deux façons d'avancer : piloter seul avec l'app (Autonome, 49 €/mois) ou être accompagné sur 90 jours (Cap Pilotage, 990 €). Puis gardez le cap avec Pilotage, Direction et l'option Croissance.">
   <link rel="stylesheet" href="css/design-system.css">
+  <style>
+    .grid-2 { display: grid; gap: var(--s-3); grid-template-columns: 1fr; }
+    @media (min-width: 820px) { .grid-2 { grid-template-columns: 1fr 1fr; } }
+    .offer { display: flex; flex-direction: column; gap: var(--s-2); height: 100%; }
+    .offer ul { list-style: none; padding: 0; margin: var(--s-2) 0; display: grid; gap: 9px; font-size: 0.92rem; flex: 1; }
+    .offer ul li { padding-left: 22px; position: relative; line-height: 1.4; }
+    .offer ul li::before { content: "→"; position: absolute; left: 0; color: var(--c-brand); }
+    .offer.dark ul li::before { color: var(--c-accent); }
+    .price { font-family: var(--f-mono); font-weight: 700; letter-spacing: -0.04em; line-height: 1; }
+    .door-badge { position: absolute; top: -12px; left: var(--s-3); }
+  </style>
 </head>
 <body>
 
@@ -27,120 +38,221 @@
   <!-- HERO -->
   <section class="bg-dark" style="position: relative; overflow: hidden;">
     <div class="wrap" style="padding-top: var(--s-6); padding-bottom: var(--s-6);">
-      <div class="reveal-stagger" style="max-width: 720px;">
+      <div class="reveal-stagger" style="max-width: 760px;">
         <span class="eyebrow accent">Nos offres</span>
-        <h1 style="color: var(--c-bg); margin-top: var(--s-2);">Quatre formules.<br><span style="color: rgba(255,255,255,0.5);">Une seule méthode.</span></h1>
+        <h1 style="color: var(--c-bg); margin-top: var(--s-2);">Deux façons d'avancer.<br><span style="color: rgba(255,255,255,0.5);">Piloter seul, ou être accompagné.</span></h1>
         <p style="color: rgba(255,255,255,0.7); font-size: var(--t-lg); margin-top: var(--s-3);">
-          De l'indépendant à la TPE structurée. Abonnement mensuel sans engagement — ou annuel avec <strong style="color: var(--c-accent);">2 mois offerts</strong>. Tarifs HT.
+          Adam Boards est le <strong style="color: var(--c-bg);">copilote de pilotage</strong> des dirigeants et de leurs conseils. Il transforme vos données comptables et commerciales en alertes, priorités et actions concrètes — pour mieux piloter votre trésorerie, votre rentabilité et vos encaissements.
         </p>
       </div>
     </div>
   </section>
 
-  <!-- ROI / Différenciation -->
+  <!-- 01 · LES DEUX PORTES D'ENTRÉE -->
   <section class="section">
     <div class="wrap">
-      <div class="split-40-60" style="align-items: center;">
-        <div class="reveal">
-          <span class="eyebrow">01 / Pourquoi ADAM</span>
-          <h2 style="margin-top: var(--s-2);">Plus rentable<br>qu'un <span class="text-accent">recrutement</span>.</h2>
+      <div class="reveal" style="margin-bottom: var(--s-4);">
+        <span class="eyebrow accent">01 / Par où commencer</span>
+        <h2 style="margin-top: var(--s-2);">Choisissez votre porte d'entrée.</h2>
+        <p class="t-mute" style="font-size: var(--t-lg); margin-top: var(--s-2); max-width: 720px;">
+          Deux besoins, deux offres complémentaires. Vous voulez <strong>suivre vos chiffres en autonomie</strong> ? Commencez par l'application. Vous avez besoin d'un <strong>cadre pour avancer</strong> ? Le programme 90 jours structure votre pilotage, puis vous rend autonome.
+        </p>
+      </div>
+
+      <div class="grid-2 reveal-stagger">
+        <!-- PORTE 1 : AUTONOME -->
+        <div class="card offer" style="position: relative; padding-top: var(--s-4);">
+          <span class="tag tag-data door-badge">Porte 1 · Piloter seul</span>
+          <h3 style="font-size: 1.5rem;">Adam Boards Autonome</h3>
+          <p class="t-sm t-mute" style="font-style: italic;">« Je veux suivre mes chiffres seul. »</p>
+          <div class="price" style="font-size: clamp(2rem, 5vw, 2.6rem); color: var(--c-data); margin-top: 4px;">49 €<span style="font-size: 0.34em; color: var(--c-gray-500); font-weight: 500;">/mois HT</span></div>
+          <p class="t-sm t-mute" style="margin: 0;">Le SaaS pour piloter seul, avec un minimum d'intervention humaine.</p>
+          <ul>
+            <li>Accès complet à l'application</li>
+            <li>Import FEC, saisie et données disponibles</li>
+            <li>Tableaux de bord, compte de résultat, SIG, budget &amp; objectifs</li>
+            <li>Trésorerie et créances</li>
+            <li>Alertes et rapports automatiques</li>
+            <li>Copilote IA encadré</li>
+            <li>Centre d'aide et support technique</li>
+          </ul>
+          <a href="diagnostic-gratuit.html" class="btn btn-primary" style="justify-content: center;">Démarrer en autonomie</a>
         </div>
-        <div class="reveal">
-          <p style="font-size: var(--t-lg); color: var(--c-gray-500);">
-            Recruter un DAF à temps partiel coûte entre <strong style="color: var(--c-primary);">1 500 et 3 000 €/mois</strong>. ADAM BOARDS vous donne le pilotage en temps réel dès <strong style="color: var(--c-accent);">39 € HT/mois</strong> — et un pilotage activement accompagné pour <strong style="color: var(--c-accent);">199 € HT/mois</strong>.
-          </p>
-          <div style="margin-top: var(--s-3); padding: var(--s-3); background: var(--c-gray-50); border-left: 3px solid var(--c-data); border-radius: 4px;">
-            <div class="t-mono t-xs t-mute" style="text-transform: uppercase; letter-spacing: 0.1em;">ROI moyen</div>
-            <p style="margin-top: 6px; font-weight: 600;">+ <span>3 200 €</span> récupérés dès le 1er mois — soit <strong class="text-data">plusieurs fois</strong> le coût annuel de votre abonnement.</p>
+
+        <!-- PORTE 2 : CAP PILOTAGE (featured / dark) -->
+        <div class="card offer dark" style="position: relative; padding-top: var(--s-4); background: var(--c-primary); color: var(--c-bg); box-shadow: var(--shadow-lg);">
+          <span class="tag door-badge" style="background: var(--c-accent); color: var(--c-primary); border-color: var(--c-accent);">Porte 2 · Être accompagné</span>
+          <h3 style="font-size: 1.5rem; color: var(--c-bg);">Cap Pilotage — 90 jours</h3>
+          <p class="t-sm" style="color: rgba(255,255,255,0.6); font-style: italic;">« J'ai besoin d'un cadre pour avancer. »</p>
+          <div class="price" style="font-size: clamp(2rem, 5vw, 2.6rem); color: var(--c-accent); margin-top: 4px;">990 €<span style="font-size: 0.34em; color: rgba(255,255,255,0.55); font-weight: 500;"> au comptant</span></div>
+          <p class="t-sm" style="color: rgba(255,255,255,0.6); margin: 0;">ou 3 × 350 € · version collective dès 490 €. Un parcours standardisé, limité dans le temps.</p>
+          <ul style="color: rgba(255,255,255,0.88);">
+            <li><strong style="color:var(--c-accent);">Comprendre</strong> — diagnostic, charges, trésorerie, créances, priorités</li>
+            <li><strong style="color:var(--c-accent);">Structurer</strong> — objectifs, budget, seuil, plan de trésorerie &amp; d'action</li>
+            <li><strong style="color:var(--c-accent);">Piloter</strong> — alertes, suivi des écarts, bilan et feuille de route</li>
+            <li>3 mois d'accès à l'application</li>
+            <li>3 rendez-vous individuels + ateliers collectifs</li>
+            <li>Copilote IA, rapports automatiques et support encadré</li>
+          </ul>
+          <a href="diagnostic-gratuit.html" class="btn btn-accent" style="justify-content: center;">Démarrer le programme →</a>
+        </div>
+      </div>
+      <p class="t-sm t-mute reveal" style="margin-top: var(--s-3); text-align: center;">
+        Pas sûr de votre porte ? <a href="#guide" style="color: var(--c-primary); font-weight: 600;">Voir quelle offre est faite pour vous ↓</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- 02 · GARDER LE CAP DANS LA DURÉE -->
+  <section class="section bg-soft">
+    <div class="wrap">
+      <div class="reveal" style="margin-bottom: var(--s-4);">
+        <span class="eyebrow">02 / Dans la durée</span>
+        <h2 style="margin-top: var(--s-2);">Garder le cap, mois après mois.</h2>
+        <p class="t-mute" style="font-size: var(--t-lg); margin-top: var(--s-2); max-width: 720px;">
+          Après le programme — ou pour les dirigeants déjà structurés — deux formules récurrentes maintiennent la discipline de pilotage et évitent le retour aux fichiers Excel dispersés.
+        </p>
+      </div>
+
+      <div class="grid-2 reveal-stagger">
+        <!-- PILOTAGE -->
+        <div class="card offer">
+          <span class="tag tag-accent">Récurrent</span>
+          <h3 style="font-size: 1.4rem;">Adam Boards Pilotage</h3>
+          <div class="price" style="font-size: 2rem; margin-top: 4px;">149 €<span style="font-size: 0.4em; color: var(--c-gray-500); font-weight: 500;">/mois HT</span></div>
+          <p class="t-sm t-mute" style="margin: 0;">199 à 249 €/mois pour plusieurs sociétés ou une complexité supérieure.</p>
+          <ul>
+            <li>Application et copilote IA complets</li>
+            <li>Rapport mensuel automatique + 3 priorités du mois</li>
+            <li>Alertes trésorerie, marge, budget et créances</li>
+            <li>Atelier collectif mensuel</li>
+            <li>Support prioritaire</li>
+            <li>Revue individuelle trimestrielle (45 min)</li>
+          </ul>
+          <a href="contact.html" class="btn btn-ghost" style="justify-content: center;">En savoir plus</a>
+        </div>
+
+        <!-- DIRECTION -->
+        <div class="card offer">
+          <span class="tag">Premium</span>
+          <h3 style="font-size: 1.4rem;">Adam Boards Direction</h3>
+          <div class="price" style="font-size: 2rem; margin-top: 4px; color: var(--c-brand);">dès 690 €<span style="font-size: 0.4em; color: var(--c-gray-500); font-weight: 500;">/mois HT</span></div>
+          <p class="t-sm t-mute" style="margin: 0;">Jusqu'à 990 €/mois selon la complexité et le nombre d'entités.</p>
+          <ul>
+            <li>Toutes les fonctions Pilotage</li>
+            <li>Rendez-vous individuel mensuel</li>
+            <li>Analyse approfondie des écarts, simulations &amp; scénarios</li>
+            <li>Consolidation multi-sociétés</li>
+            <li>Préparation des décisions</li>
+            <li>Coordination avec votre expert-comptable, RAF ou DAF</li>
+          </ul>
+          <a href="contact.html" class="btn btn-brand" style="justify-content: center;">Demander un échange →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 · OPTION CROISSANCE -->
+  <section class="section">
+    <div class="wrap">
+      <div class="reveal" style="padding: var(--s-4); background: var(--c-primary); color: var(--c-bg); border-radius: 10px; position: relative; overflow: hidden;">
+        <div aria-hidden="true" style="position: absolute; top: 50%; right: -50px; transform: translateY(-50%) rotate(-8deg); font-family: var(--f-mono); font-size: clamp(6rem, 16vw, 13rem); font-weight: 700; color: rgba(76,175,80,0.10); line-height: 0.85; pointer-events: none;">+€</div>
+        <div class="split-40-60" style="align-items: center; position: relative;">
+          <div>
+            <span class="eyebrow data">03 / En option</span>
+            <h2 style="color: var(--c-bg); margin-top: var(--s-2);">Option <span class="text-data">Croissance</span></h2>
+            <div class="price" style="font-size: 1.9rem; color: var(--c-data); margin-top: var(--s-2);">+ 99 €<span style="font-size: 0.42em; color: rgba(255,255,255,0.6); font-weight: 500;">/mois en autonomie</span></div>
+            <p style="color: rgba(255,255,255,0.6); font-size: 0.9rem; margin-top: 4px;">+ 199 €/mois avec accompagnement commercial standardisé</p>
+          </div>
+          <div>
+            <p style="color: rgba(255,255,255,0.75); font-size: var(--t-lg);">
+              L'extension commerciale, à activer quand vos <strong style="color: var(--c-bg);">données clients sont exploitables</strong> (fichier client, données de caisse).
+            </p>
+            <ul style="list-style: none; padding: 0; margin: var(--s-2) 0 0; display: grid; gap: 8px; grid-template-columns: 1fr 1fr; font-size: 0.9rem; color: rgba(255,255,255,0.85);">
+              <li>→ Segmentation RFM</li>
+              <li>→ Clients à forte valeur</li>
+              <li>→ Clients à réactiver</li>
+              <li>→ Analyse articles &amp; ventes</li>
+              <li>→ Scénarios de campagnes</li>
+              <li>→ Connexion GoHighLevel &amp; suivi</li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 4 OFFRES -->
-  <section class="section bg-soft">
+  <!-- 04 · QUELLE OFFRE POUR VOUS -->
+  <section id="guide" class="section bg-soft">
     <div class="wrap">
-      <div class="reveal" style="margin-bottom: var(--s-5);">
-        <span class="eyebrow accent">02 / Tarifs</span>
-        <h2 style="margin-top: var(--s-2);">Choisissez votre niveau d'accompagnement.</h2>
+      <div class="reveal" style="margin-bottom: var(--s-4);">
+        <span class="eyebrow accent">04 / Le bon choix</span>
+        <h2 style="margin-top: var(--s-2);">Quelle offre est faite pour vous ?</h2>
+        <p class="t-mute" style="font-size: var(--t-lg); margin-top: var(--s-2); max-width: 720px;">Repérez votre situation. En cas de doute, le diagnostic gratuit tranche en 30 minutes.</p>
       </div>
-      <div class="grid-4 reveal-stagger">
-        <!-- ADAM Solo -->
-        <div class="card" style="display: flex; flex-direction: column; gap: var(--s-2);">
-          <span class="tag tag-data">Essentiel</span>
-          <h3 style="font-size: 1.25rem;">ADAM Solo</h3>
-          <div class="stat stat-lg stat-data">39 €<span style="font-size: 0.5em; color: var(--c-gray-500);">/mois HT</span></div>
-          <p class="t-sm t-mute">Solopreneurs, artisans, micro · jusqu'à 50 factures/mois</p>
-          <ul style="list-style: none; padding: 0; display: grid; gap: 6px; font-size: 0.9rem; flex: 1; margin: var(--s-2) 0;">
-            <li>→ Saisie + OCR de factures</li>
-            <li>→ Équilibre (résultat simplifié)</li>
-            <li>→ Trésorerie réel + prévisionnel</li>
-            <li>→ Créances clients</li>
-          </ul>
-          <a href="diagnostic-gratuit.html" class="btn btn-primary" style="justify-content: center;">Démarrer</a>
-        </div>
-        <!-- ADAM Pro (featured) -->
-        <div class="card" style="background: var(--c-primary); color: var(--c-bg); display: flex; flex-direction: column; gap: var(--s-2); transform: scale(1.04); position: relative; box-shadow: var(--shadow-lg);">
-          <span class="tag" style="background: var(--c-accent); color: var(--c-primary); border-color: var(--c-accent); align-self: flex-start;">Recommandé</span>
-          <h3 style="font-size: 1.25rem; color: var(--c-bg);">ADAM Pro</h3>
-          <div class="stat stat-lg" style="color: var(--c-accent);">69 €<span style="font-size: 0.5em; color: rgba(255,255,255,0.55);">/mois HT</span></div>
-          <p class="t-sm" style="color: rgba(255,255,255,0.6);">TPE à activité régulière · jusqu'à 120 factures/mois</p>
-          <ul style="list-style: none; padding: 0; display: grid; gap: 6px; font-size: 0.9rem; flex: 1; margin: var(--s-2) 0; color: rgba(255,255,255,0.85);">
-            <li>→ Tout ADAM Solo</li>
-            <li>→ Menu Ventes &amp; Clients</li>
-            <li>→ Historique des ventes</li>
-            <li>→ <strong style="color: var(--c-accent);">Le meilleur rapport pilotage/prix</strong></li>
-          </ul>
-          <a href="diagnostic-gratuit.html" class="btn btn-accent" style="justify-content: center;">Commencer →</a>
-        </div>
-        <!-- ADAM Business -->
-        <div class="card" style="display: flex; flex-direction: column; gap: var(--s-2);">
-          <span class="tag">Avancé</span>
-          <h3 style="font-size: 1.25rem;">ADAM Business</h3>
-          <div class="stat stat-lg">99 €<span style="font-size: 0.5em; color: var(--c-gray-500);">/mois HT</span></div>
-          <p class="t-sm t-mute">TPE structurées · jusqu'à 250 factures/mois</p>
-          <ul style="list-style: none; padding: 0; display: grid; gap: 6px; font-size: 0.9rem; flex: 1; margin: var(--s-2) 0;">
-            <li>→ Tout ADAM Pro</li>
-            <li>→ Alertes et notifications</li>
-            <li>→ Volume de factures étendu</li>
-          </ul>
-          <a href="diagnostic-gratuit.html" class="btn btn-ghost" style="justify-content: center;">Commencer</a>
-        </div>
-        <!-- ADAM Pilotage+ -->
-        <div class="card" style="display: flex; flex-direction: column; gap: var(--s-2);">
-          <span class="tag">Premium</span>
-          <h3 style="font-size: 1.25rem;">ADAM Pilotage+</h3>
-          <div class="stat stat-lg">199 €<span style="font-size: 0.5em; color: var(--c-gray-500);">/mois HT</span></div>
-          <p class="t-sm t-mute">Pilotage actif accompagné</p>
-          <ul style="list-style: none; padding: 0; display: grid; gap: 6px; font-size: 0.9rem; flex: 1; margin: var(--s-2) 0;">
-            <li>→ Tout ADAM Business</li>
-            <li>→ Rapport mensuel N vs N-1 vs Budget</li>
-            <li>→ 2 actions marketing par mois</li>
-            <li>→ Analyse de l'historique des ventes</li>
-          </ul>
-          <a href="contact.html" class="btn btn-ghost" style="justify-content: center;">Nous contacter</a>
-        </div>
-      </div>
-
-      <p class="t-sm t-mute reveal" style="margin-top: var(--s-3);">0,35 € HT la facture supplémentaire au-delà du forfait · Abonnement mensuel sans engagement — annuel : <strong>2 mois offerts</strong> · Service de saisie par notre assistante dès <strong>35 € HT/mois</strong> (prix coûtant, jusqu'à 50 factures).</p>
-
-      <!-- BANDEAU GROUPES / MULTI-SOCIÉTÉS -->
-      <div class="reveal" style="margin-top: var(--s-4); padding: var(--s-3) var(--s-4); background: var(--c-gray-50); border-left: 4px solid var(--c-brand); border-radius: 6px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--s-3);">
-        <div style="flex: 1; min-width: 280px;">
-          <div class="t-mono t-xs" style="color: var(--c-brand); text-transform: uppercase; letter-spacing: 0.12em; font-weight: 600;">Groupes &amp; multi-sociétés</div>
-          <p style="margin-top: 6px; font-size: 0.95rem;">Vous dirigez <strong>2 sociétés ou plus</strong> ? Tableau de bord consolidé, pilotage cross-entités, <strong>tarif sur devis</strong> adapté à votre groupe.</p>
-        </div>
-        <a href="contact.html" class="btn btn-primary" style="white-space: nowrap;">Demander un devis <span class="arrow">→</span></a>
+      <div class="reveal" style="background: var(--c-bg); border: var(--border); border-radius: 8px; overflow-x: auto; box-shadow: var(--shadow);">
+        <table style="width: 100%; border-collapse: collapse; font-size: 0.95rem; min-width: 560px;">
+          <thead>
+            <tr style="background: var(--c-gray-50);">
+              <th style="padding: var(--s-2) var(--s-3); text-align: left; font-family: var(--f-mono); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--c-gray-500); font-weight: 500;">Votre situation</th>
+              <th style="padding: var(--s-2) var(--s-3); text-align: left; font-family: var(--f-mono); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--c-accent); font-weight: 500;">Offre conseillée</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-top: var(--border);"><td style="padding: var(--s-2) var(--s-3);">Je veux juste voir mes chiffres, en autonomie</td><td style="padding: var(--s-2) var(--s-3); font-weight: 600;">Autonome</td></tr>
+            <tr style="border-top: var(--border);"><td style="padding: var(--s-2) var(--s-3);">J'ai des chiffres mais pas de méthode ni d'objectifs</td><td style="padding: var(--s-2) var(--s-3); font-weight: 600;">Cap Pilotage — 90 jours</td></tr>
+            <tr style="border-top: var(--border);"><td style="padding: var(--s-2) var(--s-3);">J'ai un système, je veux garder le rythme</td><td style="padding: var(--s-2) var(--s-3); font-weight: 600;">Pilotage</td></tr>
+            <tr style="border-top: var(--border);"><td style="padding: var(--s-2) var(--s-3);">Plusieurs sociétés, des arbitrages financiers réguliers</td><td style="padding: var(--s-2) var(--s-3); font-weight: 600;">Direction</td></tr>
+            <tr style="border-top: var(--border); background: var(--c-gray-50);"><td style="padding: var(--s-2) var(--s-3);">J'ai un fichier client / des données de caisse à exploiter</td><td style="padding: var(--s-2) var(--s-3); font-weight: 600;">+ Option Croissance</td></tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </section>
 
-  <!-- BUDGET PAR IMPORT FEC -->
+  <!-- 05 · CE QUE FAIT / NE FAIT PAS -->
   <section class="section">
     <div class="wrap">
+      <div class="split-40-60" style="align-items: center;">
+        <div class="reveal">
+          <span class="eyebrow">05 / Notre rôle</span>
+          <h2 style="margin-top: var(--s-2);">Un copilote.<br>Pas un <span class="text-accent">remplaçant</span>.</h2>
+          <p class="t-mute" style="margin-top: var(--s-3); font-size: var(--t-lg);">
+            Adam Boards ne remplace ni votre expert-comptable, ni votre DAF, ni votre consultant. Il automatise la lecture des données, facilite le pilotage régulier et rend vos échanges avec vos conseils plus opérationnels.
+          </p>
+          <p style="margin-top: var(--s-3); padding: var(--s-3); background: var(--c-gray-50); border-left: 3px solid var(--c-brand); border-radius: 4px; font-weight: 600;">
+            Le code calcule, les règles contrôlent, l'IA explique — <span class="text-brand">et vous décidez.</span>
+          </p>
+        </div>
+        <div class="reveal grid-2" style="gap: var(--s-2);">
+          <div class="card" style="background: rgba(76,175,80,0.06); border-color: var(--c-data);">
+            <div class="t-mono t-xs" style="color: var(--c-data); text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600;">Ce qu'il fait</div>
+            <ul style="list-style: none; padding: 0; margin: var(--s-2) 0 0; display: grid; gap: 8px; font-size: 0.9rem;">
+              <li>✓ Centralise vos données</li>
+              <li>✓ Éclaire trésorerie, marge, créances</li>
+              <li>✓ Alerte et priorise</li>
+              <li>✓ Propose des actions concrètes</li>
+            </ul>
+          </div>
+          <div class="card" style="background: rgba(230,57,70,0.05); border-color: var(--c-warn);">
+            <div class="t-mono t-xs" style="color: var(--c-warn); text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600;">Ce qu'il ne fait pas</div>
+            <ul style="list-style: none; padding: 0; margin: var(--s-2) 0 0; display: grid; gap: 8px; font-size: 0.9rem;">
+              <li>✕ Promettre un gain garanti</li>
+              <li>✕ Remplacer les métiers du chiffre</li>
+              <li>✕ Donner un conseil fiscal ou juridique</li>
+              <li>✕ Décider à votre place</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 06 · BUDGET PAR IMPORT FEC -->
+  <section class="section bg-soft">
+    <div class="wrap">
       <div class="reveal" style="margin-bottom: var(--s-4);">
-        <span class="eyebrow">03 / Budget</span>
+        <span class="eyebrow">06 / Prestation ponctuelle</span>
         <h2 style="margin-top: var(--s-2);">Création de budget <span class="text-accent">par import FEC</span>.</h2>
         <p class="t-mute" style="font-size: var(--t-lg); margin-top: var(--s-2); max-width: 720px;">Nous analysons chaque compte de charges et de produits de votre exercice précédent pour bâtir, ligne à ligne, le budget de l'année. Prestation ponctuelle — tarifs HT, payable en 3 fois.</p>
       </div>
@@ -164,74 +276,31 @@
     </div>
   </section>
 
-  <!-- COMPARATIF COÛT -->
-  <section class="section bg-soft">
-    <div class="wrap">
-      <div class="reveal" style="margin-bottom: var(--s-4);">
-        <span class="eyebrow">04 / Comparaison</span>
-        <h2 style="margin-top: var(--s-2);">Combien ça coûte… <span style="color: var(--c-gray-500);">ailleurs ?</span></h2>
-      </div>
-      <div class="grid-3 reveal-stagger">
-        <div class="card" style="text-align: left;">
-          <div class="t-mono t-xs t-mute">Option A</div>
-          <h3 style="font-size: 1.1rem; margin-top: var(--s-1);">DAF à temps partiel</h3>
-          <div class="stat stat-md text-warn" style="margin-top: var(--s-2);">1 500 - 3 000 €<span style="font-size: 0.5em; color: var(--c-gray-500);">/mois</span></div>
-          <p class="t-sm t-mute" style="margin-top: var(--s-2);">Pas d'exécution. Pas d'engagement sur le résultat. Pas d'outil dédié.</p>
-        </div>
-        <div class="card" style="text-align: left;">
-          <div class="t-mono t-xs t-mute">Option B</div>
-          <h3 style="font-size: 1.1rem; margin-top: var(--s-1);">Commercial embauché</h3>
-          <div class="stat stat-md text-warn" style="margin-top: var(--s-2);">2 500 - 4 000 €<span style="font-size: 0.5em; color: var(--c-gray-500);">/mois</span></div>
-          <p class="t-sm t-mute" style="margin-top: var(--s-2);">+ charges sociales, formation, équipement, résultat incertain.</p>
-        </div>
-        <div class="card" style="text-align: left; border-color: var(--c-accent); background: rgba(244,204,26,0.06);">
-          <div class="t-mono t-xs" style="color: var(--c-accent); font-weight: 600;">ADAM BOARDS</div>
-          <h3 style="font-size: 1.1rem; margin-top: var(--s-1);">Abonnement + pilotage</h3>
-          <div class="stat stat-md text-data" style="margin-top: var(--s-2);">dès 39 €<span style="font-size: 0.5em; color: var(--c-gray-500);">/mois HT</span></div>
-          <p class="t-sm" style="margin-top: var(--s-2); font-weight: 500;"><strong>Jusqu'à 15× moins cher.</strong> Pilotage+ : 199 €/mois.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ENGAGEMENT -->
-  <section class="section bg-dark" style="position: relative; overflow: hidden;">
-    <div class="wrap" style="position: relative;">
-      <div aria-hidden="true" style="position: absolute; top: 50%; right: -60px; transform: translateY(-50%) rotate(-6deg); font-family: var(--f-mono); font-size: clamp(8rem, 20vw, 16rem); font-weight: 700; color: rgba(244,204,26,0.06); line-height: 0.85; pointer-events: none;">+€</div>
-      <div style="max-width: 720px; position: relative;">
-        <span class="eyebrow accent">05 / Notre engagement</span>
-        <h2 style="color: var(--c-bg); margin-top: var(--s-2);">Des résultats <span class="text-accent">concrets et mesurés.</span><br>Pas des promesses.</h2>
-        <p style="color: rgba(255,255,255,0.7); font-size: var(--t-lg); margin-top: var(--s-3);">
-          Notre engagement : des résultats tangibles à 90 jours — impayés récupérés, marges améliorées, trésorerie maîtrisée. Chaque mois, vous mesurez l'impact réel de vos décisions sur votre rentabilité.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
+  <!-- 07 · FAQ -->
   <section class="section">
     <div class="wrap">
       <div class="reveal" style="margin-bottom: var(--s-4);">
-        <span class="eyebrow">06 / FAQ</span>
+        <span class="eyebrow">07 / FAQ</span>
         <h2 style="margin-top: var(--s-2);">Questions fréquentes</h2>
       </div>
       <div class="reveal-stagger" style="display: grid; gap: var(--s-2); max-width: 880px;">
-        <details class="card"><summary style="font-weight: 600; cursor: pointer; font-size: 1rem;">Y a-t-il un engagement de durée ?</summary><p style="margin-top: var(--s-2); color: var(--c-gray-500);">Non. L'abonnement mensuel est sans engagement, résiliable à tout moment. L'engagement annuel vous offre 2 mois : vous ne payez que 10 mois sur 12.</p></details>
-        <details class="card"><summary style="font-weight: 600; cursor: pointer; font-size: 1rem;">Que se passe-t-il si je dépasse mon forfait de factures ?</summary><p style="margin-top: var(--s-2); color: var(--c-gray-500);">Chaque facture au-delà du volume inclus est facturée 0,35 € HT. Et vous pouvez passer à la formule supérieure à tout moment — le changement prend effet dès la période suivante.</p></details>
-        <details class="card"><summary style="font-weight: 600; cursor: pointer; font-size: 1rem;">Comment mesurez-vous les résultats ?</summary><p style="margin-top: var(--s-2); color: var(--c-gray-500);">À chaque étape, nous suivons des indicateurs précis : montant des impayés récupérés, évolution de la marge nette, économies de charges, trésorerie prévisionnelle. Vous voyez l'impact réel de chaque action sur votre Tableau de Bord ADAM.</p></details>
-        <details class="card"><summary style="font-weight: 600; cursor: pointer; font-size: 1rem;">Est-ce déductible fiscalement ?</summary><p style="margin-top: var(--s-2); color: var(--c-gray-500);">Oui. Notre prestation est une charge d'exploitation déductible (compte 622 — honoraires).</p></details>
-        <details class="card"><summary style="font-weight: 600; cursor: pointer; font-size: 1rem;">Vous remplacez mon comptable ?</summary><p style="margin-top: var(--s-2); color: var(--c-gray-500);">Non. Votre expert-comptable gère vos obligations légales. Adam Boards gère votre pilotage opérationnel. Les deux sont complémentaires, pas concurrents.</p></details>
+        <details class="card"><summary style="font-weight: 600; cursor: pointer; font-size: 1rem;">Mon expert-comptable me donne déjà mes chiffres.</summary><p style="margin-top: var(--s-2); color: var(--c-gray-500);">Adam Boards complète son travail : il rend vos données plus régulières, plus lisibles et orientées vers les décisions à prendre entre deux rendez-vous. Les deux sont complémentaires, pas concurrents.</p></details>
+        <details class="card"><summary style="font-weight: 600; cursor: pointer; font-size: 1rem;">Pourquoi l'offre Autonome à 49 € n'inclut-elle pas d'accompagnement ?</summary><p style="margin-top: var(--s-2); color: var(--c-gray-500);">L'offre Autonome couvre l'outil et l'assistance technique. L'accompagnement de pilotage est un parcours distinct (Cap Pilotage), car il mobilise une méthode et des échanges dédiés.</p></details>
+        <details class="card"><summary style="font-weight: 600; cursor: pointer; font-size: 1rem;">990 € pour trois mois, est-ce justifié ?</summary><p style="margin-top: var(--s-2); color: var(--c-gray-500);">Le prix couvre la mise en place de votre système de pilotage, trois rendez-vous individuels, les outils, le suivi et une méthode réutilisable après le programme. Le paiement peut être réparti en 3 × 350 €.</p></details>
+        <details class="card"><summary style="font-weight: 600; cursor: pointer; font-size: 1rem;">Pouvez-vous garantir une hausse de marge ?</summary><p style="margin-top: var(--s-2); color: var(--c-gray-500);">Non. Nous garantissons les moyens de pilotage : analyses, alertes, priorités et suivi. Les résultats dépendent de votre situation et des actions réellement mises en œuvre.</p></details>
+        <details class="card"><summary style="font-weight: 600; cursor: pointer; font-size: 1rem;">Est-ce que l'IA remplace mon conseiller ?</summary><p style="margin-top: var(--s-2); color: var(--c-gray-500);">Non. Le code calcule, les règles contrôlent, l'IA explique et vous décidez. Les décisions sensibles restent validées avec les professionnels concernés.</p></details>
+        <details class="card"><summary style="font-weight: 600; cursor: pointer; font-size: 1rem;">Y a-t-il un engagement de durée sur l'abonnement ?</summary><p style="margin-top: var(--s-2); color: var(--c-gray-500);">Les formules Autonome et Pilotage sont des abonnements mensuels. Cap Pilotage est un parcours de 90 jours à durée définie. Notre prestation est par ailleurs déductible (compte 622 — honoraires).</p></details>
       </div>
     </div>
   </section>
 
   <!-- CTA -->
-  <section class="section bg-soft">
-    <div class="wrap" style="text-align: center; max-width: 700px; margin: 0 auto;">
+  <section class="section bg-dark" style="position: relative; overflow: hidden;">
+    <div class="wrap" style="position: relative; text-align: center; max-width: 720px; margin: 0 auto;">
       <span class="eyebrow accent">Prêt ?</span>
-      <h2 style="margin-top: var(--s-2);">Commencez par le diagnostic gratuit.</h2>
-      <p style="color: var(--c-gray-500); font-size: var(--t-lg); margin-top: var(--s-2); margin-bottom: var(--s-4);">30 minutes. Sans engagement. Puis démarrez dès 39 € HT/mois — annuel : 2 mois offerts.</p>
-      <a href="diagnostic-gratuit.html" class="btn btn-primary">Réserver mon diagnostic <span class="arrow">→</span></a>
+      <h2 style="color: var(--c-bg); margin-top: var(--s-2);">Un doute sur la bonne porte ?<br><span class="text-accent">Commencez par le diagnostic.</span></h2>
+      <p style="color: rgba(255,255,255,0.7); font-size: var(--t-lg); margin-top: var(--s-2); margin-bottom: var(--s-4);">30 minutes. Sans engagement. On identifie ensemble si vous devez piloter seul ou être accompagné.</p>
+      <a href="diagnostic-gratuit.html" class="btn btn-accent">Réserver mon diagnostic <span class="arrow">→</span></a>
     </div>
   </section>
 
