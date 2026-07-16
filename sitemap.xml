@@ -66,15 +66,21 @@
   <!-- Blog -->
   <url>
     <loc>https://adamboards.fr/blog.html</loc>
-    <lastmod>2026-07-15</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://adamboards.fr/blog/pilotage-financier-tpe.html</loc>
-    <lastmod>2026-07-15</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://adamboards.fr/blog/tableau-de-bord-tpe-5-chiffres.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://adamboards.fr/blog/combien-coute-un-daf-externalise.html</loc>
